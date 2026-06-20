@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms of Service — Paralives Build Hub</title>
+<meta name="description" content="Terms of Service for Paralives Build Hub. Read the terms governing use of this fan-made house building guide site." />
+<link rel="canonical" href="https://paralivesbuildhub.com/terms.html" />
+<meta name="robots" content="noindex, follow" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper: '#FAF7F2', cream: '#FFFDF8', ink: '#2B2620', 'ink-soft': '#5C5347',
+        terracotta: '#E8633C', 'terracotta-dark': '#C44E2C',
+        sand: '#D4C5A8', 'sand-light': '#EDE4D3',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { background: #FAF7F2; color: #2B2620; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; }
+  main { flex: 1; }
+  .nav-link { position: relative; font-weight: 500; color: #5C5347; transition: color 0.18s; }
+  .nav-link:hover { color: #2B2620; }
+  .prose h2 { font-family: 'Fraunces', serif; font-size: 1.35rem; font-weight: 600; color: #2B2620; margin-top: 2rem; margin-bottom: 0.6rem; }
+  .prose p { color: #5C5347; line-height: 1.78; margin-bottom: 1rem; font-size: 0.95rem; }
+  .prose ul { color: #5C5347; font-size: 0.95rem; line-height: 1.78; padding-left: 1.4rem; margin-bottom: 1rem; list-style-type: disc; }
+  .prose ul li { margin-bottom: 0.3rem; }
+  .prose a { color: #E8633C; font-weight: 500; }
+  .prose a:hover { text-decoration: underline; }
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+  #mobile-menu.open { max-height: 320px; }
+  button:focus-visible, a:focus-visible { outline: 3px solid rgba(232,99,60,0.45); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<header class="sticky top-0 z-50 bg-paper/92 backdrop-blur-md border-b border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg bg-terracotta flex items-center justify-center shadow-sm group-hover:bg-terracotta-dark transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 19v-5h4v5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="font-display font-semibold text-ink text-lg tracking-tight">Paralives <span class="text-terracotta">Build Hub</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7" aria-label="Main navigation">
+        <a href="index.html" class="nav-link text-sm">Home</a>
+        <a href="category-modern.html" class="nav-link text-sm">Modern Builds</a>
+        <a href="category-cozy.html" class="nav-link text-sm">Cozy Builds</a>
+        <a href="category-farm.html" class="nav-link text-sm">Farm Builds</a>
+        <a href="color-guide.html" class="nav-link text-sm">Color Guide</a>
+        <a href="blog-guide.html" class="nav-link text-sm">Build Blog</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-ink-soft hover:bg-sand-light transition-colors" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <div class="py-3 border-t border-sand flex flex-col gap-0.5">
+        <a href="index.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Home</a>
+        <a href="category-modern.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Modern Builds</a>
+        <a href="category-cozy.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Cozy Builds</a>
+        <a href="category-farm.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Farm Builds</a>
+        <a href="color-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Color Guide</a>
+        <a href="blog-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Build Blog</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <nav class="text-xs text-ink-soft mb-6 flex items-center gap-1.5" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-terracotta transition-colors">Home</a>
+      <span>/</span>
+      <span class="text-ink font-medium">Terms of Service</span>
+    </nav>
+
+    <h1 class="font-display text-3xl font-semibold text-ink mb-2">Terms of Service</h1>
+    <p class="text-ink-soft text-xs font-mono mb-10">Last updated: June 2025</p>
+
+    <div class="prose">
+      <p>Welcome to Paralives Build Hub. By accessing or using this website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please discontinue use of the site.</p>
+
+      <h2>About this site</h2>
+      <p>Paralives Build Hub is an independent, fan-made resource offering free house building guides, layout walkthroughs, and color scheme references for the game Paralives. This site is not affiliated with, endorsed by, or sponsored by Paralives Studio or any official Paralives entity.</p>
+
+      <h2>Use of content</h2>
+      <p>All build guides, layout instructions, color palettes, and written content on this site are provided for personal, non-commercial use. You may reference and follow these guides freely while building in your own copy of Paralives. Reproducing, republishing, or redistributing substantial portions of this site's content elsewhere without permission is not permitted.</p>
+
+      <h2>No warranty</h2>
+      <p>Build guides and instructions on this site are provided "as is" for informational purposes. While we aim for accuracy, Paralives is an evolving game and build mechanics may change between updates. We make no guarantee that every guide will produce identical results in your game version.</p>
+      <ul>
+        <li>Content is provided without warranties of any kind, express or implied.</li>
+        <li>We are not responsible for any issues that arise from following a build guide on this site.</li>
+        <li>Screenshots and images are illustrative placeholders and may not represent exact in-game results.</li>
+      </ul>
+
+      <h2>Third-party advertising</h2>
+      <p>This site displays advertising served by Google AdSense and possibly other third-party ad networks. We are not responsible for the content of third-party advertisements. See our <a href="privacy-policy.html">Privacy Policy</a> for more information on how advertising partners may use data.</p>
+
+      <h2>External links</h2>
+      <p>This site may link to external websites for reference. We are not responsible for the content, accuracy, or practices of any linked external site.</p>
+
+      <h2>Limitation of liability</h2>
+      <p>To the fullest extent permitted by law, Paralives Build Hub and its operators shall not be liable for any indirect, incidental, or consequential damages arising from your use of this site.</p>
+
+      <h2>Changes to these terms</h2>
+      <p>We may revise these Terms of Service at any time. Continued use of the site after changes are posted constitutes acceptance of the updated terms.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about these Terms of Service, you can reach us through the contact information listed on this site's homepage.</p>
+
+      <p class="mt-8 pt-6 border-t border-sand">
+        <a href="index.html" class="text-terracotta font-semibold text-sm hover:underline inline-flex items-center gap-1">
+          ← Back to Build Hub Homepage
+        </a>
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-ink border-t border-sand mt-auto">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span class="font-display font-semibold text-cream text-sm">Paralives Build Hub</span>
+      <nav class="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs text-sand" aria-label="Footer navigation">
+        <a href="index.html" class="hover:text-terracotta transition-colors">Home</a>
+        <a href="category-modern.html" class="hover:text-terracotta transition-colors">Modern</a>
+        <a href="category-cozy.html" class="hover:text-terracotta transition-colors">Cozy</a>
+        <a href="category-farm.html" class="hover:text-terracotta transition-colors">Farm</a>
+        <a href="color-guide.html" class="hover:text-terracotta transition-colors">Color Guide</a>
+        <a href="blog-guide.html" class="hover:text-terracotta transition-colors">Blog</a>
+        <a href="privacy-policy.html" class="hover:text-terracotta transition-colors">Privacy</a>
+        <a href="terms.html" class="hover:text-terracotta transition-colors">Terms</a>
+      </nav>
+      <p class="text-xs text-sand/60">&copy; <span id="year"></span> Paralives Build Hub</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  navToggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    document.getElementById('icon-menu').classList.toggle('hidden', open);
+    document.getElementById('icon-close').classList.toggle('hidden', !open);
+  });
+</script>
+</body>
+</html>

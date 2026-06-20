@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Curved Wall Modern Villa — Paralives Build Guide & Color Scheme</title>
+<meta name="description" content="Step-by-step Paralives build guide for the Curved Wall Modern Villa, including furniture list, full color scheme, pro tips, and a no-grid building walkthrough." />
+<link rel="canonical" href="https://paralivesbuildhub.com/single-template-1.html" />
+<meta property="og:title" content="Curved Wall Modern Villa — Paralives Build Guide & Color Scheme" />
+<meta property="og:description" content="Step-by-step Paralives build guide for the Curved Wall Modern Villa, with a full color scheme and pro tips." />
+<meta property="og:type" content="article" />
+<meta name="robots" content="index, follow" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper: '#FAF7F2', cream: '#FFFDF8', ink: '#2B2620', 'ink-soft': '#5C5347',
+        terracotta: '#E8633C', 'terracotta-dark': '#C44E2C', 'terracotta-pale': '#FBE4DA',
+        sage: '#5B7B6B', 'sage-pale': '#E3EBE6',
+        blueprint: '#3D5A80', 'blueprint-pale': '#E5EAF1',
+        sand: '#D4C5A8', 'sand-light': '#EDE4D3',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'serif'], body: ['Inter', 'system-ui', 'sans-serif'], mono: ['"JetBrains Mono"', 'monospace'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #FAF7F2; color: #2B2620; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #D4C5A8; border-radius: 10px; }
+
+  .nav-link { position: relative; font-weight: 500; color: #5C5347; transition: color 0.18s; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #E8633C; border-radius: 1px; transition: width 0.22s ease; }
+  .nav-link:hover { color: #2B2620; }
+  .nav-link:hover::after { width: 100%; }
+  .nav-link.active { color: #E8633C; }
+  .nav-link.active::after { width: 100%; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 600; padding: 12px 26px; border-radius: 10px; transition: background 0.16s, transform 0.12s, box-shadow 0.16s; cursor: pointer; }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary { background: #E8633C; color: #FFFDF8; box-shadow: 0 4px 14px rgba(232,99,60,0.35); }
+  .btn-primary:hover { background: #C44E2C; }
+  .btn-outline { background: transparent; border: 1.5px solid #2B2620; color: #2B2620; }
+  .btn-outline:hover { background: #2B2620; color: #FFFDF8; }
+
+  .tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 999px; }
+
+  /* Pin number marker for step sequences — signature element */
+  .pin-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: #E8633C;
+    color: #FFFDF8;
+    flex-shrink: 0;
+    box-shadow: 0 3px 0 rgba(196,78,44,0.4);
+    font-size: 14px;
+  }
+  .step-connector {
+    width: 2px;
+    flex: 1;
+    background: repeating-linear-gradient(to bottom, #D4C5A8 0, #D4C5A8 6px, transparent 6px, transparent 12px);
+    margin: 4px auto;
+    min-height: 24px;
+  }
+
+  /* Blueprint paper texture for the step section background */
+  .blueprint-paper {
+    background-color: #FFFDF8;
+    background-image: radial-gradient(circle, rgba(61,90,128,0.10) 1px, transparent 1.4px);
+    background-size: 20px 20px;
+  }
+
+  .color-chip { border-radius: 12px; aspect-ratio: 1; display: flex; align-items: flex-end; padding: 10px; }
+
+  details summary { cursor: pointer; list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details > summary svg { transition: transform 0.2s ease; }
+  details[open] > summary svg { transform: rotate(180deg); }
+
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+  #mobile-menu.open { max-height: 320px; }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  button:focus-visible, a:focus-visible { outline: 3px solid rgba(232,99,60,0.45); outline-offset: 2px; }
+</style>
+
+<!-- Structured data for SEO (How-To article) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Curved Wall Modern Villa — Paralives Build Guide",
+  "description": "Step-by-step Paralives build guide for a curved wall modern villa with a sunken living room and full color scheme.",
+  "totalTime": "PT45M",
+  "step": [
+    { "@type": "HowToStep", "name": "Lay the foundation footprint", "text": "Place the foundation using the rectangular footprint tool before switching to no-grid mode." },
+    { "@type": "HowToStep", "name": "Build the curved entry wall", "text": "Use the no-grid wall tool to draw a gentle curve for the entry facade." },
+    { "@type": "HowToStep", "name": "Frame the sunken living room", "text": "Lower the living room floor level and frame the surrounding step-down walls." }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="sticky top-0 z-50 bg-paper/92 backdrop-blur-md border-b border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg bg-terracotta flex items-center justify-center shadow-sm group-hover:bg-terracotta-dark transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 19v-5h4v5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="font-display font-semibold text-ink text-lg tracking-tight">Paralives <span class="text-terracotta">Build Hub</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7" aria-label="Main navigation">
+        <a href="index.html" class="nav-link text-sm">Home</a>
+        <a href="category-modern.html" class="nav-link active text-sm">Modern Builds</a>
+        <a href="category-cozy.html" class="nav-link text-sm">Cozy Builds</a>
+        <a href="category-farm.html" class="nav-link text-sm">Farm Builds</a>
+        <a href="color-guide.html" class="nav-link text-sm">Color Guide</a>
+        <a href="blog-guide.html" class="nav-link text-sm">Build Blog</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-ink-soft hover:bg-sand-light transition-colors" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <div class="py-3 border-t border-sand flex flex-col gap-0.5">
+        <a href="index.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Home</a>
+        <a href="category-modern.html" class="px-3 py-2.5 text-sm font-medium text-terracotta rounded-lg">Modern Builds</a>
+        <a href="category-cozy.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Cozy Builds</a>
+        <a href="category-farm.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Farm Builds</a>
+        <a href="color-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Color Guide</a>
+        <a href="blog-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Build Blog</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ════════════════ BREADCRUMB + HEADER ════════════════ -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+    <nav class="text-xs text-ink-soft mb-5 flex items-center gap-1.5 flex-wrap" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-terracotta transition-colors">Home</a>
+      <span>/</span>
+      <a href="category-modern.html" class="hover:text-terracotta transition-colors">Modern Builds</a>
+      <span>/</span>
+      <span class="text-ink font-medium">Curved Wall Modern Villa</span>
+    </nav>
+    <span class="tag bg-blueprint-pale text-blueprint inline-block mb-4">MODERN · CURVED WALL BUILD</span>
+    <h1 class="font-display text-3xl sm:text-4xl lg:text-[2.5rem] font-semibold text-ink leading-tight tracking-tight mb-4">
+      Curved Wall Modern Villa
+    </h1>
+    <p class="text-ink-soft text-base leading-relaxed max-w-2xl mb-6">
+      This Paralives build guide walks through a single-story curved wall house with a sunken living room and floor-to-ceiling windows. It's a great next step once you're comfortable with basic no-grid building and want to try a full curved facade.
+    </p>
+  </div>
+
+  <!-- ════════════════ COVER IMAGE ════════════════ -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="rounded-2xl overflow-hidden shadow-lg border-4 border-cream">
+      <img
+        src="assets/curved-villa-illustration.svg"
+        alt="Hand-painted illustration of the Curved Wall Modern Villa Paralives build"
+        class="w-full h-full object-cover"
+        width="1200" height="680"
+        loading="eager"
+      />
+    </div>
+  </div>
+
+  <!-- ════════════════ BASIC BUILD INFO ════════════════ -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid sm:grid-cols-4 gap-4">
+      <div class="bg-cream border border-sand rounded-xl p-5">
+        <p class="text-xs text-ink-soft font-mono uppercase tracking-wide mb-2">House Type</p>
+        <p class="font-display text-base font-semibold text-ink">Single-Story Villa</p>
+      </div>
+      <div class="bg-cream border border-sand rounded-xl p-5">
+        <p class="text-xs text-ink-soft font-mono uppercase tracking-wide mb-2">Build Difficulty</p>
+        <div class="flex items-center gap-1.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-terracotta"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-terracotta"></span>
+          <span class="w-2.5 h-2.5 rounded-full bg-sand"></span>
+          <span class="font-display text-base font-semibold text-ink ml-1">Intermediate</span>
+        </div>
+      </div>
+      <div class="bg-cream border border-sand rounded-xl p-5">
+        <p class="text-xs text-ink-soft font-mono uppercase tracking-wide mb-2">Furniture Used</p>
+        <p class="font-display text-base font-semibold text-ink">38 items</p>
+      </div>
+      <div class="bg-cream border border-sand rounded-xl p-5">
+        <p class="text-xs text-ink-soft font-mono uppercase tracking-wide mb-2">Build Steps</p>
+        <p class="font-display text-base font-semibold text-ink">14 steps</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOOGLE ADSENSE AD SLOT: single-template-after-info =====
+       Placement: below build info cards, above step walkthrough.
+       Recommended size: responsive horizontal banner (728x90 / 320x100). -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:100px;">
+      Ad Placement — After Build Info (728×90)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- ════════════════ STEP-BY-STEP WALKTHROUGH ════════════════ -->
+  <section class="blueprint-paper border-y border-sand py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink mb-2">Step-by-step construction walkthrough</h2>
+      <p class="text-ink-soft text-sm mb-10 max-w-2xl">Follow this Paralives layout guide in order — each step builds on the wall placement from the one before it.</p>
+
+      <div class="space-y-0">
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">1</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Lay the rectangular foundation footprint</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Start with the standard grid-based foundation tool to mark out a 12×9 tile rectangle. This becomes the base footprint before any no-grid building begins, so keep it simple and square at this stage.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">2</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Switch to no-grid mode for the entry facade</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Enable no-grid building and delete the front-facing wall of your rectangle. Redraw it as a gentle outward curve, pulling the midpoint of the wall about two tiles forward from the original straight line.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">3</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Frame the sunken living room</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Select the central 6×6 area behind the curved entry and lower the floor level by one step using the terrain tool. Add a single low wall or railing around the edge to define the sunken seating area.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">4</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Install floor-to-ceiling windows</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Replace the upper two-thirds of the curved facade wall with full-height window panels. Space them evenly along the curve so each segment gets its own window rather than one continuous pane.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">5</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Add the kitchen and dining wing</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Extend a straight-walled rectangle off the back of the main footprint for the kitchen and dining area. Keep this section on-grid to contrast with the curved living space.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">6</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Build the bedroom and bathroom block</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Add a second rectangular wing opposite the kitchen for the main bedroom and an ensuite bathroom. Connect it to the living room with a short hallway.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">7</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Roof the structure with a flat overhang</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Apply a flat roof across the whole footprint, then extend the overhang by one extra tile above the curved entry to create shade over the window wall.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">8</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Apply the exterior color scheme</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Paint the main walls in warm white, with the curved facade picked out in a contrasting sand tone. Full hex codes are listed in the color palette section below.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">9</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Lay flooring by zone</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Use a warm wood floor in the living room and bedroom, switching to a light stone tile in the kitchen and bathroom for a natural material contrast.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">10</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Furnish the sunken living room</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Place a low-profile sectional sofa facing the curved window wall, with a round coffee table at the center of the sunken area.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">11</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Furnish the kitchen and dining wing</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Add a galley-style kitchen run along one wall, with a six-seat dining table positioned to catch light from the side windows.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">12</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Furnish the bedroom and bathroom</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Keep the bedroom furniture minimal — bed, two nightstands, and a slim wardrobe — to match the open feel of the rest of the build.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">13</span>
+            <div class="step-connector"></div>
+          </div>
+          <div class="pb-8 pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Add exterior landscaping</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Surround the curved entry with low gravel beds and two or three structured shrubs, keeping the planting simple so it doesn't compete with the wall shape.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col items-center">
+            <span class="pin-number">14</span>
+          </div>
+          <div class="pt-1">
+            <h3 class="font-display text-lg font-semibold text-ink mb-1.5">Final lighting pass</h3>
+            <p class="text-ink-soft text-sm leading-relaxed">Finish with warm-toned recessed lighting along the curved ceiling line and a single statement pendant light over the dining table.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ COLOR PALETTE ════════════════ -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink mb-2">Full color code palette</h2>
+    <p class="text-ink-soft text-sm mb-8 max-w-2xl">This Paralives color scheme pairs a warm neutral base with a single sand accent so the curved facade reads as one continuous shape.</p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div>
+        <div class="color-chip" style="background:#F4EDE1">
+          <span class="text-xs font-mono font-semibold" style="color:#2B2620">#F4EDE1</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Warm White</p>
+        <p class="text-xs text-ink-soft">Main exterior walls</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#D4C5A8">
+          <span class="text-xs font-mono font-semibold" style="color:#2B2620">#D4C5A8</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Sand</p>
+        <p class="text-xs text-ink-soft">Curved facade accent</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#8C6B4F">
+          <span class="text-xs font-mono font-semibold text-cream">#8C6B4F</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Warm Wood</p>
+        <p class="text-xs text-ink-soft">Living room flooring</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#E3DED3">
+          <span class="text-xs font-mono font-semibold" style="color:#2B2620">#E3DED3</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Stone Grey</p>
+        <p class="text-xs text-ink-soft">Kitchen &amp; bathroom tile</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#3D5A80">
+          <span class="text-xs font-mono font-semibold text-cream">#3D5A80</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Blueprint Blue</p>
+        <p class="text-xs text-ink-soft">Front door accent</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#2B2620">
+          <span class="text-xs font-mono font-semibold text-cream">#2B2620</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Charcoal</p>
+        <p class="text-xs text-ink-soft">Window frames</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#EDE4D3">
+          <span class="text-xs font-mono font-semibold" style="color:#2B2620">#EDE4D3</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Light Sand</p>
+        <p class="text-xs text-ink-soft">Bedroom walls</p>
+      </div>
+      <div>
+        <div class="color-chip" style="background:#5B7B6B">
+          <span class="text-xs font-mono font-semibold text-cream">#5B7B6B</span>
+        </div>
+        <p class="text-sm font-semibold text-ink mt-2">Sage</p>
+        <p class="text-xs text-ink-soft">Garden planting accent</p>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <a href="color-guide.html" class="text-terracotta font-semibold text-sm hover:text-terracotta-dark transition-colors inline-flex items-center gap-1">
+        See the full Paralives color scheme tool
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== GOOGLE ADSENSE AD SLOT: single-template-mid =====
+       Placement: between color palette and pro tips section.
+       Recommended size: responsive rectangle (336x280 / 300x250). -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:280px;">
+      Ad Placement — Mid-Page Rectangle (336×280)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- ════════════════ PRO TIPS ════════════════ -->
+  <section class="bg-sand-light/60 border-y border-sand py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink mb-8">Pro building tips</h2>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="bg-cream border border-sand rounded-xl p-5">
+          <h3 class="font-display text-base font-semibold text-ink mb-1.5">Curve the wall in small increments</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">When using no-grid building for the facade, drag the wall midpoint a small distance at a time and check the angle from an outside camera view before continuing. Large single drags tend to create an uneven curve.</p>
+        </div>
+        <div class="bg-cream border border-sand rounded-xl p-5">
+          <h3 class="font-display text-base font-semibold text-ink mb-1.5">Keep on-grid wings symmetrical</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">Since the kitchen and bedroom wings stay on the standard grid, mirror their dimensions exactly. This keeps the roofline simple even though the front of the house is curved.</p>
+        </div>
+        <div class="bg-cream border border-sand rounded-xl p-5">
+          <h3 class="font-display text-base font-semibold text-ink mb-1.5">Test window spacing before placing furniture</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">Place all curved-wall windows first and walk through the room in first-person view. It's much easier to adjust window position before the sofa and coffee table are in place.</p>
+        </div>
+        <div class="bg-cream border border-sand rounded-xl p-5">
+          <h3 class="font-display text-base font-semibold text-ink mb-1.5">Save a duplicate before the sunken floor step</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">Lowering the floor level in step 3 can be tricky to undo cleanly. Save a duplicate of your build before this step so you can revert if the terrain tool behaves unexpectedly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FAQ ════════════════ -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink mb-8">Frequently asked questions</h2>
+    <div class="space-y-3">
+
+      <details class="bg-cream border border-sand rounded-xl p-5 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display font-semibold text-ink text-base">Do I need the no-grid building tool unlocked to follow this guide?</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="flex-shrink-0 text-terracotta" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+        </summary>
+        <p class="text-ink-soft text-sm leading-relaxed mt-3">Yes. The curved entry facade in step 2 relies on Paralives' no-grid building mode. The rest of the layout — kitchen wing, bedroom wing, and roof — can be built entirely with standard grid tools if you prefer.</p>
+      </details>
+
+      <details class="bg-cream border border-sand rounded-xl p-5 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display font-semibold text-ink text-base">Can I build this on a smaller lot?</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="flex-shrink-0 text-terracotta" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+        </summary>
+        <p class="text-ink-soft text-sm leading-relaxed mt-3">This Paralives build guide is designed for a roughly 12×9 tile main footprint plus two wings, so it works best on a medium or large lot. On a smaller lot, try dropping the dining wing in step 5 and combining the kitchen and dining area instead.</p>
+      </details>
+
+      <details class="bg-cream border border-sand rounded-xl p-5 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display font-semibold text-ink text-base">What's the easiest way to match this color scheme exactly?</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="flex-shrink-0 text-terracotta" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+        </summary>
+        <p class="text-ink-soft text-sm leading-relaxed mt-3">Use the hex codes listed in the color palette section above as you select paint and flooring swatches in build mode. Our <a href="color-guide.html" class="text-terracotta font-medium hover:underline">Paralives color scheme guide</a> also breaks down how to find the closest in-game match for each code.</p>
+      </details>
+
+      <details class="bg-cream border border-sand rounded-xl p-5 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display font-semibold text-ink text-base">How long does this build usually take?</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="flex-shrink-0 text-terracotta" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+        </summary>
+        <p class="text-ink-soft text-sm leading-relaxed mt-3">Most players following this Paralives layout guide complete the full 14-step build, including furnishing, in 45 to 60 minutes. The curved wall in step 2 is usually the slowest part if you're new to no-grid building.</p>
+      </details>
+
+      <details class="bg-cream border border-sand rounded-xl p-5 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-display font-semibold text-ink text-base">Is this build beginner-friendly?</span>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="flex-shrink-0 text-terracotta" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
+        </summary>
+        <p class="text-ink-soft text-sm leading-relaxed mt-3">It's rated Intermediate mainly because of the curved wall and sunken floor steps. If you're brand new to Paralives building, we'd suggest starting with a Beginner-rated layout guide in the <a href="category-cozy.html" class="text-terracotta font-medium hover:underline">Cozy Builds category</a> first.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ════════════════ RELATED BUILDS ════════════════ -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <h2 class="font-display text-xl font-semibold text-ink mb-6">More modern Paralives builds</h2>
+    <div class="grid sm:grid-cols-3 gap-5">
+      <a href="single-template-1.html" class="block group">
+        <div class="rounded-xl overflow-hidden mb-3 border border-sand">
+          <img src="https://picsum.photos/seed/paralives-glass-box/420/280" alt="Paralives glass box minimalist house build" class="w-full h-36 object-cover" loading="lazy" width="420" height="280" />
+        </div>
+        <h3 class="font-display text-sm font-semibold text-ink group-hover:text-terracotta transition-colors">Glass Box Minimalist Build</h3>
+      </a>
+      <a href="single-template-1.html" class="block group">
+        <div class="rounded-xl overflow-hidden mb-3 border border-sand">
+          <img src="https://picsum.photos/seed/paralives-courtyard-loop/420/280" alt="Paralives courtyard loop house build" class="w-full h-36 object-cover" loading="lazy" width="420" height="280" />
+        </div>
+        <h3 class="font-display text-sm font-semibold text-ink group-hover:text-terracotta transition-colors">Courtyard Loop House</h3>
+      </a>
+      <a href="single-template-1.html" class="block group">
+        <div class="rounded-xl overflow-hidden mb-3 border border-sand">
+          <img src="https://picsum.photos/seed/paralives-arc-pavilion/420/280" alt="Paralives arc pavilion curved roof house build" class="w-full h-36 object-cover" loading="lazy" width="420" height="280" />
+        </div>
+        <h3 class="font-display text-sm font-semibold text-ink group-hover:text-terracotta transition-colors">Arc Pavilion Curved Roof Build</h3>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-ink border-t border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="w-8 h-8 rounded-lg bg-terracotta flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="font-display font-semibold text-cream text-base">Paralives Build Hub</span>
+        </div>
+        <p class="text-sand text-sm leading-relaxed max-w-sm">Free step-by-step Paralives build guides, layout walkthroughs, and color scheme tools for the global Paralives community.</p>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Navigate</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="index.html" class="hover:text-terracotta transition-colors">Home</a></li>
+          <li><a href="category-modern.html" class="hover:text-terracotta transition-colors">Modern Builds</a></li>
+          <li><a href="category-cozy.html" class="hover:text-terracotta transition-colors">Cozy Builds</a></li>
+          <li><a href="category-farm.html" class="hover:text-terracotta transition-colors">Farm Builds</a></li>
+          <li><a href="color-guide.html" class="hover:text-terracotta transition-colors">Color Guide</a></li>
+          <li><a href="blog-guide.html" class="hover:text-terracotta transition-colors">Build Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Legal</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="privacy-policy.html" class="hover:text-terracotta transition-colors">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:text-terracotta transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sand/70">
+      <p>&copy; <span id="year"></span> Paralives Build Hub. Fan site — not affiliated with Paralives Studio.</p>
+      <p>Built for the Paralives building community.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  navToggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    document.getElementById('icon-menu').classList.toggle('hidden', open);
+    document.getElementById('icon-close').classList.toggle('hidden', !open);
+  });
+</script>
+</body>
+</html>

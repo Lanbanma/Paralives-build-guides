@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paralives Color Guide — Color Schemes, Hex Codes & Palette Matching</title>
+<meta name="description" content="Browse Paralives color schemes for modern, cozy, and farm builds. Find wall paint, flooring, and trim hex codes that work together for every house style." />
+<link rel="canonical" href="https://paralivesbuildhub.com/color-guide.html" />
+<meta property="og:title" content="Paralives Color Guide — Color Schemes, Hex Codes & Palette Matching" />
+<meta property="og:description" content="Browse Paralives color schemes and hex codes for every house style." />
+<meta property="og:type" content="website" />
+<meta name="robots" content="index, follow" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper: '#FAF7F2', cream: '#FFFDF8', ink: '#2B2620', 'ink-soft': '#5C5347',
+        terracotta: '#E8633C', 'terracotta-dark': '#C44E2C', 'terracotta-pale': '#FBE4DA',
+        sage: '#5B7B6B', 'sage-pale': '#E3EBE6',
+        blueprint: '#3D5A80', 'blueprint-pale': '#E5EAF1',
+        sand: '#D4C5A8', 'sand-light': '#EDE4D3',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #FAF7F2; color: #2B2620; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #D4C5A8; border-radius: 10px; }
+  .blueprint-grid { background-image: radial-gradient(circle, rgba(61,90,128,0.16) 1px, transparent 1.4px); background-size: 22px 22px; }
+  .nav-link { position: relative; font-weight: 500; color: #5C5347; transition: color 0.18s; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #E8633C; border-radius: 1px; transition: width 0.22s ease; }
+  .nav-link:hover { color: #2B2620; }
+  .nav-link:hover::after { width: 100%; }
+  .nav-link.active { color: #E8633C; }
+  .nav-link.active::after { width: 100%; }
+  .tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 999px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 600; padding: 12px 26px; border-radius: 10px; transition: background 0.16s, transform 0.12s; cursor: pointer; }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary { background: #E8633C; color: #FFFDF8; box-shadow: 0 4px 14px rgba(232,99,60,0.35); }
+  .btn-primary:hover { background: #C44E2C; }
+
+  /* Color chip */
+  .swatch {
+    aspect-ratio: 1;
+    border-radius: 14px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: 2px solid transparent;
+  }
+  .swatch:hover { transform: scale(1.06); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+  .swatch.copied::after {
+    content: 'Copied!';
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #5C5347;
+    white-space: nowrap;
+  }
+
+  .palette-card { background: #FFFDF8; border: 1.5px solid #D4C5A8; border-radius: 20px; overflow: hidden; }
+
+  .filter-pill { font-size: 13px; font-weight: 500; padding: 7px 18px; border-radius: 999px; border: 1.5px solid #D4C5A8; color: #5C5347; transition: all 0.16s; cursor: pointer; background: #FFFDF8; }
+  .filter-pill.active, .filter-pill:hover { background: #2B2620; color: #FFFDF8; border-color: #2B2620; }
+
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+  #mobile-menu.open { max-height: 320px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  button:focus-visible, a:focus-visible { outline: 3px solid rgba(232,99,60,0.45); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-paper/92 backdrop-blur-md border-b border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg bg-terracotta flex items-center justify-center shadow-sm group-hover:bg-terracotta-dark transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 19v-5h4v5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="font-display font-semibold text-ink text-lg tracking-tight">Paralives <span class="text-terracotta">Build Hub</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7" aria-label="Main navigation">
+        <a href="index.html" class="nav-link text-sm">Home</a>
+        <a href="category-modern.html" class="nav-link text-sm">Modern Builds</a>
+        <a href="category-cozy.html" class="nav-link text-sm">Cozy Builds</a>
+        <a href="category-farm.html" class="nav-link text-sm">Farm Builds</a>
+        <a href="color-guide.html" class="nav-link active text-sm">Color Guide</a>
+        <a href="blog-guide.html" class="nav-link text-sm">Build Blog</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-ink-soft hover:bg-sand-light transition-colors" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <div class="py-3 border-t border-sand flex flex-col gap-0.5">
+        <a href="index.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Home</a>
+        <a href="category-modern.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Modern Builds</a>
+        <a href="category-cozy.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Cozy Builds</a>
+        <a href="category-farm.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Farm Builds</a>
+        <a href="color-guide.html" class="px-3 py-2.5 text-sm font-medium text-terracotta rounded-lg">Color Guide</a>
+        <a href="blog-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Build Blog</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HEADER -->
+  <section class="blueprint-grid border-b border-sand">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-12">
+      <nav class="text-xs text-ink-soft mb-5 flex items-center gap-1.5" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-terracotta transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-ink font-medium">Color Guide</span>
+      </nav>
+      <span class="tag bg-terracotta-pale text-terracotta-dark inline-block mb-4">COLOR TOOL</span>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-[2.6rem] font-semibold text-ink leading-tight tracking-tight mb-4 max-w-2xl">
+        Paralives Color Scheme Guide
+      </h1>
+      <p class="text-ink-soft text-base leading-relaxed max-w-2xl">
+        Every palette below is curated for a specific Paralives build style. Click any swatch to copy its hex code, then paste it directly into the Paralives paint tool. Palettes are grouped by house style — modern, cozy, and farm — so you can match your colors to your layout from the start.
+      </p>
+    </div>
+  </section>
+
+  <!-- AD SLOT: Color guide top -->
+  <!-- ===== GOOGLE ADSENSE AD SLOT: color-guide-top =====
+       Placement: below page header, above filter and palette grid.
+       Recommended size: responsive horizontal banner (728x90 / 320x100). -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:100px;">
+      Ad Placement — Color Guide Top Banner (728×90)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- FILTER BAR -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-4">
+    <div class="flex items-center gap-2 flex-wrap" role="group" aria-label="Filter palettes by style">
+      <button class="filter-pill active" data-filter="all">All Styles</button>
+      <button class="filter-pill" data-filter="modern">Modern</button>
+      <button class="filter-pill" data-filter="cozy">Cozy</button>
+      <button class="filter-pill" data-filter="farm">Farm</button>
+    </div>
+  </section>
+
+  <!-- INTRO TEXT -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
+    <div class="max-w-3xl">
+      <h2 class="font-display text-xl font-semibold text-ink mb-2">How to use this Paralives color scheme guide</h2>
+      <p class="text-ink-soft text-sm leading-relaxed">
+        Each palette card lists the hex codes for walls, flooring, trim, and accent elements. Click any color swatch to copy the hex code to your clipboard. In Paralives, open the paint tool, select custom color, and paste the hex code directly. Every palette below has been tested across at least one full build guide on this site — click the linked guide to see it in use.
+      </p>
+    </div>
+  </section>
+
+  <!-- PALETTES GRID -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="palette-grid">
+
+      <!-- MODERN 1 -->
+      <div class="palette-card" data-style="modern">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#F4EDE1" data-hex="#F4EDE1" title="Copy #F4EDE1"></div>
+          <div class="swatch h-24 rounded-none" style="background:#D4C5A8" data-hex="#D4C5A8" title="Copy #D4C5A8"></div>
+          <div class="swatch h-24 rounded-none" style="background:#2B2620" data-hex="#2B2620" title="Copy #2B2620"></div>
+          <div class="swatch h-24 rounded-none" style="background:#3D5A80" data-hex="#3D5A80" title="Copy #3D5A80"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Warm Sand Modern</h3>
+            <span class="tag bg-blueprint-pale text-blueprint flex-shrink-0">MODERN</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">A warm white base with sand accent and charcoal window frames. Pairs perfectly with the Curved Wall Villa build.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#F4EDE1</strong> — Walls</span>
+            <span><strong class="text-ink">#D4C5A8</strong> — Facade</span>
+            <span><strong class="text-ink">#2B2620</strong> — Trim</span>
+            <span><strong class="text-ink">#3D5A80</strong> — Door</span>
+          </div>
+          <a href="single-template-1.html" class="text-terracotta text-xs font-semibold hover:underline">See it in the Curved Wall Villa →</a>
+        </div>
+      </div>
+
+      <!-- MODERN 2 -->
+      <div class="palette-card" data-style="modern">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#E8E4DF" data-hex="#E8E4DF" title="Copy #E8E4DF"></div>
+          <div class="swatch h-24 rounded-none" style="background:#BFBAB4" data-hex="#BFBAB4" title="Copy #BFBAB4"></div>
+          <div class="swatch h-24 rounded-none" style="background:#1A1A1F" data-hex="#1A1A1F" title="Copy #1A1A1F"></div>
+          <div class="swatch h-24 rounded-none" style="background:#8C9BAF" data-hex="#8C9BAF" title="Copy #8C9BAF"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Cool Stone Minimalist</h3>
+            <span class="tag bg-blueprint-pale text-blueprint flex-shrink-0">MODERN</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">A cool grey palette with near-black trim and a muted slate accent for glass box and cantilever builds.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#E8E4DF</strong> — Walls</span>
+            <span><strong class="text-ink">#BFBAB4</strong> — Facade</span>
+            <span><strong class="text-ink">#1A1A1F</strong> — Trim</span>
+            <span><strong class="text-ink">#8C9BAF</strong> — Accent</span>
+          </div>
+          <a href="category-modern.html" class="text-terracotta text-xs font-semibold hover:underline">Browse modern builds →</a>
+        </div>
+      </div>
+
+      <!-- MODERN 3 -->
+      <div class="palette-card" data-style="modern">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#FFFDF8" data-hex="#FFFDF8" title="Copy #FFFDF8"></div>
+          <div class="swatch h-24 rounded-none" style="background:#E8633C" data-hex="#E8633C" title="Copy #E8633C"></div>
+          <div class="swatch h-24 rounded-none" style="background:#2B2620" data-hex="#2B2620" title="Copy #2B2620"></div>
+          <div class="swatch h-24 rounded-none" style="background:#8C6B4F" data-hex="#8C6B4F" title="Copy #8C6B4F"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">White & Terracotta Pop</h3>
+            <span class="tag bg-blueprint-pale text-blueprint flex-shrink-0">MODERN</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">Pure white walls with a bold terracotta front door and warm wood flooring. Makes curved wall facades look striking.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#FFFDF8</strong> — Walls</span>
+            <span><strong class="text-ink">#E8633C</strong> — Door</span>
+            <span><strong class="text-ink">#2B2620</strong> — Trim</span>
+            <span><strong class="text-ink">#8C6B4F</strong> — Floor</span>
+          </div>
+          <a href="category-modern.html" class="text-terracotta text-xs font-semibold hover:underline">Browse modern builds →</a>
+        </div>
+      </div>
+
+      <!-- COZY 1 -->
+      <div class="palette-card" data-style="cozy">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#F5EFE7" data-hex="#F5EFE7" title="Copy #F5EFE7"></div>
+          <div class="swatch h-24 rounded-none" style="background:#C9A97A" data-hex="#C9A97A" title="Copy #C9A97A"></div>
+          <div class="swatch h-24 rounded-none" style="background:#5B7B6B" data-hex="#5B7B6B" title="Copy #5B7B6B"></div>
+          <div class="swatch h-24 rounded-none" style="background:#7A5C3E" data-hex="#7A5C3E" title="Copy #7A5C3E"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Warm Linen Cottage</h3>
+            <span class="tag bg-sage-pale text-sage flex-shrink-0">COZY</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">A soft linen wall tone with caramel wood, sage green shutters, and a deep brown roof. Classic cozy cottage feel.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#F5EFE7</strong> — Walls</span>
+            <span><strong class="text-ink">#C9A97A</strong> — Wood</span>
+            <span><strong class="text-ink">#5B7B6B</strong> — Shutters</span>
+            <span><strong class="text-ink">#7A5C3E</strong> — Roof</span>
+          </div>
+          <a href="category-cozy.html" class="text-terracotta text-xs font-semibold hover:underline">Browse cozy builds →</a>
+        </div>
+      </div>
+
+      <!-- COZY 2 -->
+      <div class="palette-card" data-style="cozy">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#EBE6E0" data-hex="#EBE6E0" title="Copy #EBE6E0"></div>
+          <div class="swatch h-24 rounded-none" style="background:#B8CBBA" data-hex="#B8CBBA" title="Copy #B8CBBA"></div>
+          <div class="swatch h-24 rounded-none" style="background:#8FA68F" data-hex="#8FA68F" title="Copy #8FA68F"></div>
+          <div class="swatch h-24 rounded-none" style="background:#4A6355" data-hex="#4A6355" title="Copy #4A6355"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Garden Sage Cottage</h3>
+            <span class="tag bg-sage-pale text-sage flex-shrink-0">COZY</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">A tonal green palette from pale stone to deep sage. Great for bay window and garden cottage builds.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#EBE6E0</strong> — Walls</span>
+            <span><strong class="text-ink">#B8CBBA</strong> — Light trim</span>
+            <span><strong class="text-ink">#8FA68F</strong> — Shutters</span>
+            <span><strong class="text-ink">#4A6355</strong> — Door</span>
+          </div>
+          <a href="category-cozy.html" class="text-terracotta text-xs font-semibold hover:underline">Browse cozy builds →</a>
+        </div>
+      </div>
+
+      <!-- COZY 3 -->
+      <div class="palette-card" data-style="cozy">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#F9F2EA" data-hex="#F9F2EA" title="Copy #F9F2EA"></div>
+          <div class="swatch h-24 rounded-none" style="background:#E2C4A8" data-hex="#E2C4A8" title="Copy #E2C4A8"></div>
+          <div class="swatch h-24 rounded-none" style="background:#C4864A" data-hex="#C4864A" title="Copy #C4864A"></div>
+          <div class="swatch h-24 rounded-none" style="background:#6B3A2A" data-hex="#6B3A2A" title="Copy #6B3A2A"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Harvest Amber Cozy</h3>
+            <span class="tag bg-sage-pale text-sage flex-shrink-0">COZY</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">Warm cream with amber wood tones and deep terracotta-brown for a rustic yet tidy cottage look.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#F9F2EA</strong> — Walls</span>
+            <span><strong class="text-ink">#E2C4A8</strong> — Plaster</span>
+            <span><strong class="text-ink">#C4864A</strong> — Wood</span>
+            <span><strong class="text-ink">#6B3A2A</strong> — Beams</span>
+          </div>
+          <a href="category-cozy.html" class="text-terracotta text-xs font-semibold hover:underline">Browse cozy builds →</a>
+        </div>
+      </div>
+
+      <!-- FARM 1 -->
+      <div class="palette-card" data-style="farm">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#F0EAE0" data-hex="#F0EAE0" title="Copy #F0EAE0"></div>
+          <div class="swatch h-24 rounded-none" style="background:#C8A87A" data-hex="#C8A87A" title="Copy #C8A87A"></div>
+          <div class="swatch h-24 rounded-none" style="background:#5C3A22" data-hex="#5C3A22" title="Copy #5C3A22"></div>
+          <div class="swatch h-24 rounded-none" style="background:#8B4513" data-hex="#8B4513" title="Copy #8B4513"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Rustic Farmhouse Classic</h3>
+            <span class="tag bg-terracotta-pale text-terracotta-dark flex-shrink-0">FARM</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">A neutral base with caramel trim and two shades of warm brown. Works for any barn-roof farmhouse build.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#F0EAE0</strong> — Walls</span>
+            <span><strong class="text-ink">#C8A87A</strong> — Trim</span>
+            <span><strong class="text-ink">#5C3A22</strong> — Roof</span>
+            <span><strong class="text-ink">#8B4513</strong> — Barn door</span>
+          </div>
+          <a href="category-farm.html" class="text-terracotta text-xs font-semibold hover:underline">Browse farm builds →</a>
+        </div>
+      </div>
+
+      <!-- FARM 2 -->
+      <div class="palette-card" data-style="farm">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#E8E2D8" data-hex="#E8E2D8" title="Copy #E8E2D8"></div>
+          <div class="swatch h-24 rounded-none" style="background:#A8B89A" data-hex="#A8B89A" title="Copy #A8B89A"></div>
+          <div class="swatch h-24 rounded-none" style="background:#556B4A" data-hex="#556B4A" title="Copy #556B4A"></div>
+          <div class="swatch h-24 rounded-none" style="background:#2E3D28" data-hex="#2E3D28" title="Copy #2E3D28"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Orchard Green Farmhouse</h3>
+            <span class="tag bg-terracotta-pale text-terracotta-dark flex-shrink-0">FARM</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">Warm parchment walls with a full green tonal range from pale sage to deep forest. Suits orchard and creekside farm builds.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#E8E2D8</strong> — Walls</span>
+            <span><strong class="text-ink">#A8B89A</strong> — Shutters</span>
+            <span><strong class="text-ink">#556B4A</strong> — Trim</span>
+            <span><strong class="text-ink">#2E3D28</strong> — Roof</span>
+          </div>
+          <a href="category-farm.html" class="text-terracotta text-xs font-semibold hover:underline">Browse farm builds →</a>
+        </div>
+      </div>
+
+      <!-- FARM 3 -->
+      <div class="palette-card" data-style="farm">
+        <div class="grid grid-cols-4 gap-0">
+          <div class="swatch h-24 rounded-none" style="background:#F2E8D8" data-hex="#F2E8D8" title="Copy #F2E8D8"></div>
+          <div class="swatch h-24 rounded-none" style="background:#D4A574" data-hex="#D4A574" title="Copy #D4A574"></div>
+          <div class="swatch h-24 rounded-none" style="background:#C0392B" data-hex="#C0392B" title="Copy #C0392B"></div>
+          <div class="swatch h-24 rounded-none" style="background:#2B1810" data-hex="#2B1810" title="Copy #2B1810"></div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <h3 class="font-display text-base font-semibold text-ink">Red Barn Statement</h3>
+            <span class="tag bg-terracotta-pale text-terracotta-dark flex-shrink-0">FARM</span>
+          </div>
+          <p class="text-ink-soft text-xs leading-relaxed mb-3">Classic American barn red as the focal color, balanced by cream walls and a near-black foundation trim.</p>
+          <div class="grid grid-cols-2 gap-y-1.5 text-xs font-mono text-ink-soft mb-4">
+            <span><strong class="text-ink">#F2E8D8</strong> — Walls</span>
+            <span><strong class="text-ink">#D4A574</strong> — Wood</span>
+            <span><strong class="text-ink">#C0392B</strong> — Barn facade</span>
+            <span><strong class="text-ink">#2B1810</strong> — Foundation</span>
+          </div>
+          <a href="category-farm.html" class="text-terracotta text-xs font-semibold hover:underline">Browse farm builds →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AD SLOT: Color guide mid -->
+  <!-- ===== GOOGLE ADSENSE AD SLOT: color-guide-mid =====
+       Placement: between palette grid and how-to section.
+       Recommended size: responsive rectangle (336x280 / 300x250). -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:280px;">
+      Ad Placement — Color Guide Mid Rectangle (336×280)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- HOW TO USE -->
+  <section class="bg-ink py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl font-semibold text-cream mb-8">How to apply a Paralives color scheme in-game</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+          <span class="font-mono text-terracotta font-bold text-lg block mb-2">01</span>
+          <h3 class="font-display text-base font-semibold text-cream mb-1.5">Copy the hex code</h3>
+          <p class="text-sand text-sm leading-relaxed">Click any color swatch above to copy its hex code to your clipboard. Each code starts with a # symbol.</p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+          <span class="font-mono text-terracotta font-bold text-lg block mb-2">02</span>
+          <h3 class="font-display text-base font-semibold text-cream mb-1.5">Open the Paralives paint tool</h3>
+          <p class="text-sand text-sm leading-relaxed">In build mode, select the paint bucket tool and choose a surface — wall, floor, trim, or roof — to paint.</p>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5">
+          <span class="font-mono text-terracotta font-bold text-lg block mb-2">03</span>
+          <h3 class="font-display text-base font-semibold text-cream mb-1.5">Paste into the custom color field</h3>
+          <p class="text-sand text-sm leading-relaxed">Select the custom color option, click the hex input field, and paste the code. The swatch will update immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO INTERNAL LINKS -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="bg-cream border border-sand rounded-2xl p-7">
+      <h2 class="font-display text-lg font-semibold text-ink mb-3">Find a Paralives build to go with your color scheme</h2>
+      <p class="text-ink-soft text-sm leading-relaxed">
+        Once you've picked a palette, find a matching layout in our <a href="category-modern.html" class="text-terracotta font-medium hover:underline">modern build guides</a>, <a href="category-cozy.html" class="text-terracotta font-medium hover:underline">cozy cottage guides</a>, or <a href="category-farm.html" class="text-terracotta font-medium hover:underline">farm house guides</a>. Each build's detail page includes its own recommended Paralives color scheme — so you can also go the other way and pick a layout first, then use its palette card as your starting point.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="w-8 h-8 rounded-lg bg-terracotta flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="font-display font-semibold text-cream text-base">Paralives Build Hub</span>
+        </div>
+        <p class="text-sand text-sm leading-relaxed max-w-sm">Free step-by-step Paralives build guides, layout walkthroughs, and color scheme tools for the global Paralives community.</p>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Navigate</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="index.html" class="hover:text-terracotta transition-colors">Home</a></li>
+          <li><a href="category-modern.html" class="hover:text-terracotta transition-colors">Modern Builds</a></li>
+          <li><a href="category-cozy.html" class="hover:text-terracotta transition-colors">Cozy Builds</a></li>
+          <li><a href="category-farm.html" class="hover:text-terracotta transition-colors">Farm Builds</a></li>
+          <li><a href="color-guide.html" class="hover:text-terracotta transition-colors">Color Guide</a></li>
+          <li><a href="blog-guide.html" class="hover:text-terracotta transition-colors">Build Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Legal</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="privacy-policy.html" class="hover:text-terracotta transition-colors">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:text-terracotta transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sand/70">
+      <p>&copy; <span id="year"></span> Paralives Build Hub. Fan site — not affiliated with Paralives Studio.</p>
+      <p>Built for the Paralives building community.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile nav
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  navToggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    document.getElementById('icon-menu').classList.toggle('hidden', open);
+    document.getElementById('icon-close').classList.toggle('hidden', !open);
+  });
+
+  // Filter pills
+  document.querySelectorAll('.filter-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('#palette-grid .palette-card').forEach(card => {
+        if (filter === 'all' || card.dataset.style === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Click-to-copy hex swatches
+  document.querySelectorAll('.swatch').forEach(swatch => {
+    swatch.addEventListener('click', () => {
+      const hex = swatch.dataset.hex;
+      if (!hex) return;
+      navigator.clipboard.writeText(hex).then(() => {
+        swatch.classList.add('copied');
+        setTimeout(() => swatch.classList.remove('copied'), 1800);
+      }).catch(() => {
+        // Fallback for non-secure contexts
+        const ta = document.createElement('textarea');
+        ta.value = hex;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        swatch.classList.add('copied');
+        setTimeout(() => swatch.classList.remove('copied'), 1800);
+      });
+    });
+  });
+</script>
+</body>
+</html>

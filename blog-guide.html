@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>5 Curved Wall Layouts Every Paralives Builder Should Try — Build Blog</title>
+<meta name="description" content="Discover 5 Paralives curved wall house layouts that make the most of the no-grid build system, with technique tips and color scheme suggestions for each." />
+<link rel="canonical" href="https://paralivesbuildhub.com/blog-guide.html" />
+<meta property="og:title" content="5 Curved Wall Layouts Every Paralives Builder Should Try" />
+<meta property="og:description" content="Discover 5 Paralives curved wall house layouts that make the most of the no-grid build system." />
+<meta property="og:type" content="article" />
+<meta name="robots" content="index, follow" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper: '#FAF7F2', cream: '#FFFDF8', ink: '#2B2620', 'ink-soft': '#5C5347',
+        terracotta: '#E8633C', 'terracotta-dark': '#C44E2C', 'terracotta-pale': '#FBE4DA',
+        sage: '#5B7B6B', 'sage-pale': '#E3EBE6',
+        blueprint: '#3D5A80', 'blueprint-pale': '#E5EAF1',
+        sand: '#D4C5A8', 'sand-light': '#EDE4D3',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #FAF7F2; color: #2B2620; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #D4C5A8; border-radius: 10px; }
+  .blueprint-grid { background-image: radial-gradient(circle, rgba(61,90,128,0.16) 1px, transparent 1.4px); background-size: 22px 22px; }
+  .nav-link { position: relative; font-weight: 500; color: #5C5347; transition: color 0.18s; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #E8633C; border-radius: 1px; transition: width 0.22s ease; }
+  .nav-link:hover { color: #2B2620; }
+  .nav-link:hover::after { width: 100%; }
+  .nav-link.active { color: #E8633C; }
+  .nav-link.active::after { width: 100%; }
+  .tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 999px; }
+
+  /* Article prose styles */
+  .prose h2 { font-family: 'Fraunces', serif; font-size: 1.55rem; font-weight: 600; color: #2B2620; margin-top: 2.5rem; margin-bottom: 0.75rem; line-height: 1.25; }
+  .prose h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 600; color: #2B2620; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+  .prose p { color: #5C5347; line-height: 1.78; margin-bottom: 1.1rem; font-size: 0.975rem; }
+  .prose a { color: #E8633C; font-weight: 500; }
+  .prose a:hover { text-decoration: underline; }
+  .prose ul { color: #5C5347; font-size: 0.975rem; line-height: 1.78; padding-left: 1.4rem; margin-bottom: 1.1rem; list-style-type: disc; }
+  .prose ul li { margin-bottom: 0.35rem; }
+  .prose strong { color: #2B2620; font-weight: 600; }
+  .prose blockquote { border-left: 3px solid #E8633C; padding-left: 1.25rem; margin: 1.5rem 0; font-family: 'Fraunces', serif; font-style: italic; color: #2B2620; font-size: 1.05rem; }
+
+  .card-hover { transition: transform 0.22s ease, box-shadow 0.22s ease; }
+  .card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 28px -6px rgba(43,38,32,0.16); }
+
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+  #mobile-menu.open { max-height: 320px; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  button:focus-visible, a:focus-visible { outline: 3px solid rgba(232,99,60,0.45); outline-offset: 2px; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "5 Curved Wall Layouts Every Paralives Builder Should Try",
+  "description": "Discover 5 Paralives curved wall house layouts that make the most of the no-grid build system.",
+  "datePublished": "2025-06-01",
+  "dateModified": "2025-06-01",
+  "author": { "@type": "Organization", "name": "Paralives Build Hub" },
+  "publisher": { "@type": "Organization", "name": "Paralives Build Hub" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://paralivesbuildhub.com/blog-guide.html" }
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="sticky top-0 z-50 bg-paper/92 backdrop-blur-md border-b border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg bg-terracotta flex items-center justify-center shadow-sm group-hover:bg-terracotta-dark transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 19v-5h4v5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="font-display font-semibold text-ink text-lg tracking-tight">Paralives <span class="text-terracotta">Build Hub</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-7" aria-label="Main navigation">
+        <a href="index.html" class="nav-link text-sm">Home</a>
+        <a href="category-modern.html" class="nav-link text-sm">Modern Builds</a>
+        <a href="category-cozy.html" class="nav-link text-sm">Cozy Builds</a>
+        <a href="category-farm.html" class="nav-link text-sm">Farm Builds</a>
+        <a href="color-guide.html" class="nav-link text-sm">Color Guide</a>
+        <a href="blog-guide.html" class="nav-link active text-sm">Build Blog</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-ink-soft hover:bg-sand-light transition-colors" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu">
+      <div class="py-3 border-t border-sand flex flex-col gap-0.5">
+        <a href="index.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Home</a>
+        <a href="category-modern.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Modern Builds</a>
+        <a href="category-cozy.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Cozy Builds</a>
+        <a href="category-farm.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Farm Builds</a>
+        <a href="color-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Color Guide</a>
+        <a href="blog-guide.html" class="px-3 py-2.5 text-sm font-medium text-terracotta rounded-lg">Build Blog</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="blueprint-grid border-b border-sand">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-12">
+      <nav class="text-xs text-ink-soft mb-5 flex items-center gap-1.5" aria-label="Breadcrumb">
+        <a href="index.html" class="hover:text-terracotta transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-ink font-medium">Build Blog</span>
+      </nav>
+      <div class="flex flex-wrap items-center gap-3 mb-5">
+        <span class="tag bg-blueprint-pale text-blueprint">BUILD BLOG</span>
+        <span class="text-xs text-ink-soft font-mono">7 MIN READ</span>
+        <span class="text-xs text-ink-soft font-mono">·</span>
+        <time class="text-xs text-ink-soft font-mono" datetime="2025-06-01">June 2025</time>
+      </div>
+      <h1 class="font-display text-3xl sm:text-4xl lg:text-[2.5rem] font-semibold text-ink leading-tight tracking-tight mb-5 max-w-3xl">
+        5 Curved Wall Layouts Every Paralives Builder Should Try
+      </h1>
+      <p class="text-ink-soft text-base leading-relaxed max-w-2xl">
+        Paralives' no-grid building system opens up a huge range of curved wall house shapes that look impossible to pull off but are actually more approachable than they seem. Here are five layouts that make the most of curved walls — from a simple single-curve facade to a full ring-shaped courtyard house.
+      </p>
+    </div>
+  </section>
+
+  <!-- COVER IMAGE -->
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-2">
+    <div class="rounded-2xl overflow-hidden shadow-md border border-sand">
+      <img src="https://picsum.photos/seed/paralives-blog-1/1100/580" alt="Paralives curved wall house layouts showcase" class="w-full object-cover" width="1100" height="580" loading="eager" />
+    </div>
+  </div>
+
+  <!-- AD SLOT: blog top -->
+  <!-- ===== GOOGLE ADSENSE AD SLOT: blog-guide-top =====
+       Placement: below cover image, before article body.
+       Recommended size: responsive horizontal banner (728x90 / 320x100). -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:100px;">
+      Ad Placement — Blog Top Banner (728×90)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- ARTICLE BODY + SIDEBAR LAYOUT -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="lg:grid lg:grid-cols-[1fr_280px] gap-12 items-start">
+
+      <!-- MAIN ARTICLE -->
+      <article class="prose max-w-none">
+
+        <p>
+          The Paralives curved wall house is one of the most-searched build types in the community for good reason — the curves break up the blocky look that straight-grid building tends to produce and give a house a character you'd expect from a high-end render, not a life sim. The trick is knowing which <strong>layout shape</strong> to use before you start placing walls.
+        </p>
+
+        <blockquote>
+          "The shape of a wall is the first thing the camera sees. Get the curve right and everything else — furniture placement, color, lighting — becomes easier to resolve."
+        </blockquote>
+
+        <h2>1. The Single-Curve Facade</h2>
+        <img src="https://picsum.photos/seed/paralives-layout-curve1/800/420" alt="Paralives single curve facade layout" class="w-full rounded-xl border border-sand mb-4" loading="lazy" width="800" height="420" />
+        <p>
+          This is the easiest entry point into curved-wall Paralives building and the one used in our <a href="single-template-1.html">Curved Wall Modern Villa guide</a>. The entire footprint stays on a standard rectangular grid. Only the front-facing wall is replaced with a gentle outward curve — you're changing one wall out of four, so the structure stays easy to roof and extend.
+        </p>
+        <p>
+          The key to making it work is <strong>keeping the curve subtle</strong>. A midpoint drag of about 1.5 to 2 tiles outward from a 12-tile-wide wall gives you a visible curve that still reads as an intentional design choice rather than an accident. Go further than 3 tiles and the interior becomes awkward to furnish.
+        </p>
+        <ul>
+          <li>Best for: modern villas, minimalist builds, first curved-wall Paralives builds</li>
+          <li>Difficulty: Intermediate</li>
+          <li>Pairs well with: floor-to-ceiling windows along the curve</li>
+        </ul>
+
+        <h2>2. The Bow-Front Row House</h2>
+        <img src="https://picsum.photos/seed/paralives-layout-bow/800/420" alt="Paralives bow front row house layout" class="w-full rounded-xl border border-sand mb-4" loading="lazy" width="800" height="420" />
+        <p>
+          A traditional architectural feature where the front of the house bows outward as a multi-story curve, often used in Georgian terraces. In a Paralives build, you recreate this by stacking two single-curve walls at the same curve angle — one for the ground floor and one for the floor above — so the curved section appears to run the full height of the building.
+        </p>
+        <p>
+          The challenge here is keeping the curve angle identical on both floors. The easiest way is to note the exact tile coordinates of your ground floor curve midpoint before you switch to the first floor and repeat the drag from the same reference point. A <strong>Paralives no-grid build</strong> tip: use the snap-to-existing-wall feature to lock your upper wall to the lower one's anchor points.
+        </p>
+        <ul>
+          <li>Best for: town homes, two-story modern builds, cozy bay window cottages</li>
+          <li>Difficulty: Intermediate</li>
+          <li>Pairs well with: deep sash windows along the bow</li>
+        </ul>
+
+        <h2>3. The Pinched Oval Footprint</h2>
+        <img src="https://picsum.photos/seed/paralives-layout-oval/800/420" alt="Paralives pinched oval footprint layout" class="w-full rounded-xl border border-sand mb-4" loading="lazy" width="800" height="420" />
+        <p>
+          Instead of curving one wall of a rectangle, this layout uses no-grid building to draw an oval footprint from scratch — two long curved walls meeting at pointed ends. The result looks like a lens or an eye from above, and it's one of the most distinctive Paralives curved wall house shapes you can build.
+        </p>
+        <p>
+          Because the entire perimeter is curved, roofing becomes trickier. A flat roof with a slight overhang is the cleanest solution; domed or tapered roofs tend to fight the shape rather than sit naturally on it. Interior furniture placement is also more interesting — avoid square room dividers and instead use curved sofas or round tables to echo the wall shape.
+        </p>
+        <ul>
+          <li>Best for: statement modern builds, designer homes, advanced Paralives builds</li>
+          <li>Difficulty: Advanced</li>
+          <li>Pairs well with: a monochrome Paralives color scheme to highlight the silhouette</li>
+        </ul>
+
+        <!-- AD SLOT: blog mid inline -->
+        <!-- ===== GOOGLE ADSENSE AD SLOT: blog-guide-inline =====
+             Placement: within article body, between sections 3 and 4.
+             Recommended size: responsive rectangle (336x280 / 300x250). -->
+        <div class="not-prose w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono my-8" style="min-height:280px;">
+          Ad Placement — Blog In-Article Rectangle (336×280)
+        </div>
+        <!-- ===== END AD SLOT ===== -->
+
+        <h2>4. The Curved Connector Wing</h2>
+        <img src="https://picsum.photos/seed/paralives-layout-connector/800/420" alt="Paralives curved connector wing layout" class="w-full rounded-xl border border-sand mb-4" loading="lazy" width="800" height="420" />
+        <p>
+          Rather than curving an exterior-facing wall, this technique uses a curved wall as the <strong>internal connector between two rectangular wings</strong>. The curved section becomes a hall, a covered walkway, or a glass link — and from the outside, the curve is visible as a glazed or solid arc between two blocky wings.
+        </p>
+        <p>
+          This is the most naturally functional of all the curved-wall Paralives layouts because the curved connector solves a real layout problem: how to join two off-axis wings at an angle. It also gives you more interior space to work with than trying to shoehorn furniture into a fully curved room.
+        </p>
+        <ul>
+          <li>Best for: L-shaped builds, multi-wing layouts, courtyard-adjacent homes</li>
+          <li>Difficulty: Intermediate to Advanced</li>
+          <li>Pairs well with: glazed arc walls and a sage or blueprint color accent</li>
+        </ul>
+
+        <h2>5. The Full Courtyard Ring</h2>
+        <img src="https://picsum.photos/seed/paralives-layout-ring/800/420" alt="Paralives full courtyard ring layout" class="w-full rounded-xl border border-sand mb-4" loading="lazy" width="800" height="420" />
+        <p>
+          The most ambitious curved-wall Paralives build on this list: a fully closed ring of curved walls surrounding a central open courtyard. You build the outer perimeter as a large oval, then cut the inner edge away and use a second, smaller oval inside to define the courtyard boundary.
+        </p>
+        <p>
+          This layout is featured in our <a href="category-modern.html">Courtyard Loop House guide</a> in the Modern Builds section. It's rated Advanced mainly because of the inner-wall trim work and the way the roofline has to accommodate the curved inner edge. But the spatial result — rooms arranged around a central sky-lit garden — is unlike anything you can build on a standard grid.
+        </p>
+        <ul>
+          <li>Best for: villa-style homes, large lots, experienced Paralives builders</li>
+          <li>Difficulty: Advanced</li>
+          <li>Pairs well with: terracotta or sand Paralives color scheme and low ornamental planting in the courtyard</li>
+        </ul>
+
+        <h2>Choosing the right curved wall Paralives build for your skill level</h2>
+        <p>
+          If this is your first time using no-grid building in Paralives, start with the <strong>single-curve facade</strong> (layout 1). It changes the fewest walls from what you'd build on a standard grid, so the structure stays manageable and you can focus entirely on getting the curve shape right before adding complexity.
+        </p>
+        <p>
+          The <strong>curved connector wing</strong> (layout 4) is a useful next step because it puts the curve in a structurally clear role — connecting two things — rather than asking you to build an entirely curved room. Once you're comfortable with that, the <strong>courtyard ring</strong> (layout 5) becomes a natural progression.
+        </p>
+        <p>
+          Whichever layout you go with, pair it with a matching Paralives color scheme from our <a href="color-guide.html">color guide</a> before you start building, and every individual step in the construction will feel more intentional rather than figured-out-as-you-go.
+        </p>
+
+      </article>
+
+      <!-- SIDEBAR -->
+      <aside class="hidden lg:block pt-2">
+        <div class="sticky top-24">
+          <p class="font-display text-sm font-semibold text-ink mb-4">More build guides</p>
+          <div class="space-y-4">
+            <a href="single-template-1.html" class="block card-hover bg-cream border border-sand rounded-xl overflow-hidden">
+              <img src="https://picsum.photos/seed/paralives-curve-villa/280/160" alt="Curved Wall Modern Villa" class="w-full h-28 object-cover" loading="lazy" width="280" height="160" />
+              <div class="p-3">
+                <p class="font-display text-sm font-semibold text-ink leading-snug">Curved Wall Modern Villa</p>
+                <p class="text-xs text-ink-soft font-mono mt-0.5">14 steps · Intermediate</p>
+              </div>
+            </a>
+            <a href="category-modern.html" class="block card-hover bg-cream border border-sand rounded-xl overflow-hidden">
+              <img src="https://picsum.photos/seed/paralives-courtyard-loop/280/160" alt="Courtyard Loop House" class="w-full h-28 object-cover" loading="lazy" width="280" height="160" />
+              <div class="p-3">
+                <p class="font-display text-sm font-semibold text-ink leading-snug">Courtyard Loop House</p>
+                <p class="text-xs text-ink-soft font-mono mt-0.5">24 steps · Advanced</p>
+              </div>
+            </a>
+            <div class="bg-terracotta-pale border border-terracotta/20 rounded-xl p-4">
+              <p class="font-display text-sm font-semibold text-ink mb-1.5">Find your color scheme</p>
+              <p class="text-xs text-ink-soft leading-relaxed mb-3">Match your curved wall build with the right Paralives color palette before you start.</p>
+              <a href="color-guide.html" class="text-terracotta font-semibold text-xs hover:underline inline-flex items-center gap-1">
+                Open Color Guide
+                <svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- MORE BLOG POSTS -->
+  <section class="bg-sand-light/60 border-t border-sand py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-xl font-semibold text-ink mb-6">More from the Build Blog</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <a href="blog-guide.html" class="block group bg-cream rounded-2xl border border-sand overflow-hidden card-hover">
+          <img src="https://picsum.photos/seed/paralives-blog-2/420/260" alt="Paralives no grid beginner guide" class="w-full h-36 object-cover" loading="lazy" width="420" height="260" />
+          <div class="p-4">
+            <span class="tag bg-blueprint-pale text-blueprint">TECHNIQUE</span>
+            <h3 class="font-display text-sm font-semibold text-ink mt-2 group-hover:text-terracotta transition-colors">No-Grid Building in Paralives: A Beginner's Layout Guide</h3>
+            <p class="text-xs text-ink-soft font-mono mt-1.5">6 MIN READ</p>
+          </div>
+        </a>
+        <a href="blog-guide.html" class="block group bg-cream rounded-2xl border border-sand overflow-hidden card-hover">
+          <img src="https://picsum.photos/seed/paralives-blog-3/420/260" alt="Paralives color scheme matching tutorial" class="w-full h-36 object-cover" loading="lazy" width="420" height="260" />
+          <div class="p-4">
+            <span class="tag bg-terracotta-pale text-terracotta-dark">COLOR</span>
+            <h3 class="font-display text-sm font-semibold text-ink mt-2 group-hover:text-terracotta transition-colors">How to Match a Paralives Color Scheme to Your Build Style</h3>
+            <p class="text-xs text-ink-soft font-mono mt-1.5">5 MIN READ</p>
+          </div>
+        </a>
+        <a href="blog-guide.html" class="block group bg-cream rounded-2xl border border-sand overflow-hidden card-hover">
+          <img src="https://picsum.photos/seed/paralives-blog-4/420/260" alt="Paralives farm house building tips" class="w-full h-36 object-cover" loading="lazy" width="420" height="260" />
+          <div class="p-4">
+            <span class="tag bg-sage-pale text-sage">FARM</span>
+            <h3 class="font-display text-sm font-semibold text-ink mt-2 group-hover:text-terracotta transition-colors">Building a Wraparound Porch in Paralives: Step-by-Step Tips</h3>
+            <p class="text-xs text-ink-soft font-mono mt-1.5">8 MIN READ</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="w-8 h-8 rounded-lg bg-terracotta flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="font-display font-semibold text-cream text-base">Paralives Build Hub</span>
+        </div>
+        <p class="text-sand text-sm leading-relaxed max-w-sm">Free step-by-step Paralives build guides, layout walkthroughs, and color scheme tools for the global Paralives community.</p>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Navigate</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="index.html" class="hover:text-terracotta transition-colors">Home</a></li>
+          <li><a href="category-modern.html" class="hover:text-terracotta transition-colors">Modern Builds</a></li>
+          <li><a href="category-cozy.html" class="hover:text-terracotta transition-colors">Cozy Builds</a></li>
+          <li><a href="category-farm.html" class="hover:text-terracotta transition-colors">Farm Builds</a></li>
+          <li><a href="color-guide.html" class="hover:text-terracotta transition-colors">Color Guide</a></li>
+          <li><a href="blog-guide.html" class="hover:text-terracotta transition-colors">Build Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Legal</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="privacy-policy.html" class="hover:text-terracotta transition-colors">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:text-terracotta transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sand/70">
+      <p>&copy; <span id="year"></span> Paralives Build Hub. Fan site — not affiliated with Paralives Studio.</p>
+      <p>Built for the Paralives building community.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  navToggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    document.getElementById('icon-menu').classList.toggle('hidden', open);
+    document.getElementById('icon-close').classList.toggle('hidden', !open);
+  });
+</script>
+</body>
+</html>

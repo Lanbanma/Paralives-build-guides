@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paralives Build Hub — Step-by-Step House Layouts & Color Guides</title>
+<meta name="description" content="Free Paralives build guides with step-by-step house layouts, curved wall techniques, no-grid building tips, and full color palettes for modern, cozy, and farm-style homes." />
+<link rel="canonical" href="https://paralivesbuildhub.com/index.html" />
+<meta property="og:title" content="Paralives Build Hub — Step-by-Step House Layouts & Color Guides" />
+<meta property="og:description" content="Free Paralives build guides with step-by-step house layouts, curved wall techniques, no-grid building tips, and full color palettes." />
+<meta property="og:type" content="website" />
+<meta name="robots" content="index, follow" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        paper:       '#FAF7F2',
+        cream:       '#FFFDF8',
+        ink:         '#2B2620',
+        'ink-soft':  '#5C5347',
+        terracotta:      '#E8633C',
+        'terracotta-dark':'#C44E2C',
+        'terracotta-pale':'#FBE4DA',
+        sage:        '#5B7B6B',
+        'sage-pale': '#E3EBE6',
+        blueprint:   '#3D5A80',
+        'blueprint-pale':'#E5EAF1',
+        sand:        '#D4C5A8',
+        'sand-light':'#EDE4D3',
+      },
+      fontFamily: {
+        display: ['Fraunces', 'serif'],
+        body:    ['Inter', 'system-ui', 'sans-serif'],
+        mono:    ['"JetBrains Mono"', 'monospace'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #FAF7F2; color: #2B2620; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #D4C5A8; border-radius: 10px; }
+
+  /* Blueprint dot-grid texture — signature element */
+  .blueprint-grid {
+    background-image: radial-gradient(circle, rgba(61,90,128,0.16) 1px, transparent 1.4px);
+    background-size: 22px 22px;
+  }
+  .blueprint-grid-light {
+    background-image: radial-gradient(circle, rgba(212,197,168,0.5) 1px, transparent 1.4px);
+    background-size: 20px 20px;
+  }
+
+  /* Pin number marker for step sequences */
+  .pin-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: #E8633C;
+    color: #FFFDF8;
+    flex-shrink: 0;
+    box-shadow: 0 3px 0 rgba(196,78,44,0.4);
+  }
+
+  .nav-link { position: relative; font-weight: 500; color: #5C5347; transition: color 0.18s; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #E8633C; border-radius: 1px; transition: width 0.22s ease; }
+  .nav-link:hover { color: #2B2620; }
+  .nav-link:hover::after { width: 100%; }
+  .nav-link.active { color: #E8633C; }
+  .nav-link.active::after { width: 100%; }
+
+  .card-hover { transition: transform 0.22s ease, box-shadow 0.22s ease; }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 36px -8px rgba(43,38,32,0.18); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 600; padding: 12px 26px; border-radius: 10px; transition: background 0.16s, transform 0.12s, box-shadow 0.16s; cursor: pointer; }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary { background: #E8633C; color: #FFFDF8; box-shadow: 0 4px 14px rgba(232,99,60,0.35); }
+  .btn-primary:hover { background: #C44E2C; box-shadow: 0 6px 20px rgba(232,99,60,0.45); }
+  .btn-outline { background: transparent; border: 1.5px solid #2B2620; color: #2B2620; }
+  .btn-outline:hover { background: #2B2620; color: #FFFDF8; }
+
+  .tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; padding: 3px 10px; border-radius: 999px; }
+
+  #mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+  #mobile-menu.open { max-height: 320px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  button:focus-visible, a:focus-visible { outline: 3px solid rgba(232,99,60,0.45); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<!-- ════════════════ HEADER / NAV ════════════════ -->
+<header class="sticky top-0 z-50 bg-paper/92 backdrop-blur-md border-b border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <div class="w-9 h-9 rounded-lg bg-terracotta flex items-center justify-center shadow-sm group-hover:bg-terracotta-dark transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 19v-5h4v5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="font-display font-semibold text-ink text-lg tracking-tight">Paralives <span class="text-terracotta">Build Hub</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active text-sm">Home</a>
+        <a href="category-modern.html" class="nav-link text-sm">Modern Builds</a>
+        <a href="category-cozy.html" class="nav-link text-sm">Cozy Builds</a>
+        <a href="category-farm.html" class="nav-link text-sm">Farm Builds</a>
+        <a href="color-guide.html" class="nav-link text-sm">Color Guide</a>
+        <a href="blog-guide.html" class="nav-link text-sm">Build Blog</a>
+      </nav>
+
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-ink-soft hover:bg-sand-light transition-colors" aria-label="Toggle menu" aria-expanded="false">
+        <svg id="icon-menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="hidden"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu">
+      <div class="py-3 border-t border-sand flex flex-col gap-0.5">
+        <a href="index.html" class="px-3 py-2.5 text-sm font-medium text-terracotta rounded-lg">Home</a>
+        <a href="category-modern.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Modern Builds</a>
+        <a href="category-cozy.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Cozy Builds</a>
+        <a href="category-farm.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Farm Builds</a>
+        <a href="color-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Color Guide</a>
+        <a href="blog-guide.html" class="px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-sand-light rounded-lg transition-colors">Build Blog</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ════════════════ HERO ════════════════ -->
+  <section class="relative overflow-hidden blueprint-grid">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-16 sm:pt-20 sm:pb-24">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="tag bg-terracotta-pale text-terracotta-dark inline-block mb-5">PARALIVES BUILD GUIDES</span>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-semibold text-ink leading-[1.08] tracking-tight mb-5">
+            Build better Paralives houses, <span class="text-terracotta italic">one layout at a time.</span>
+          </h1>
+          <p class="text-ink-soft text-base sm:text-lg leading-relaxed max-w-lg mb-8">
+            Step-by-step Paralives build guides covering curved wall houses, no-grid building techniques, and complete color schemes — for modern, cozy cottage, and farm-style homes.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="category-modern.html" class="btn btn-primary">
+              Browse Build Guides
+              <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+            <a href="color-guide.html" class="btn btn-outline">View Color Guide</a>
+          </div>
+
+          <div class="flex flex-wrap gap-x-8 gap-y-3 mt-10 pt-8 border-t border-sand">
+            <div>
+              <p class="font-display text-2xl font-semibold text-ink">30+</p>
+              <p class="text-xs text-ink-soft mt-0.5">Build layouts</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl font-semibold text-ink">3</p>
+              <p class="text-xs text-ink-soft mt-0.5">House styles</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl font-semibold text-ink">100%</p>
+              <p class="text-xs text-ink-soft mt-0.5">Free guides</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-cream rotate-1">
+            <img
+              src="assets/curved-villa-illustration.svg"
+              alt="Hand-painted illustration of a Paralives curved wall modern villa with terracotta door and garden"
+              class="w-full h-full object-cover"
+              width="800" height="620"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute -bottom-5 -left-5 bg-cream rounded-xl shadow-lg border border-sand px-4 py-3 hidden sm:block">
+            <p class="text-xs text-ink-soft font-medium mb-1">Difficulty</p>
+            <div class="flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+              <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+              <span class="w-2 h-2 rounded-full bg-sand"></span>
+              <span class="text-xs font-semibold text-ink ml-1">Intermediate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ AD SLOT: Homepage top banner ════════════════ -->
+  <!-- ===== GOOGLE ADSENSE AD SLOT: home-top-banner =====
+       Placement: below hero, above fold-adjacent content.
+       Recommended size: responsive horizontal banner (728x90 / 320x100).
+       Reserve fixed min-height below to prevent CLS layout shift. -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:100px;">
+      Ad Placement — Home Top Banner (728×90)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- ════════════════ KEYWORD INTRO BLOCK ════════════════ -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="max-w-3xl">
+      <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink mb-4">Your go-to source for Paralives build inspiration</h2>
+      <p class="text-ink-soft leading-relaxed mb-4">
+        Paralives build guides on this site walk through every part of the construction process, from laying out your first room to finishing a full curved wall house. Whether you're following a Paralives layout guide for the first time or refining a no-grid build technique you've already started, you'll find clear steps, furniture lists, and a complete color scheme for every project.
+      </p>
+      <p class="text-ink-soft leading-relaxed">
+        Each Paralives build on this hub is organized by style — modern, cozy cottage, or farm — so you can browse by the look you want rather than scrolling through unrelated layouts. Pair any guide with our Paralives color scheme tool to match wall paint, flooring, and trim before you start placing furniture.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════ CATEGORY CARDS ════════════════ -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-16">
+    <div class="flex items-end justify-between mb-8 gap-4 flex-wrap">
+      <div>
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink">Browse builds by style</h2>
+        <p class="text-ink-soft text-sm mt-1">Three categories, every build fully documented step by step.</p>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <a href="category-modern.html" class="card-hover bg-cream rounded-2xl border border-sand overflow-hidden block">
+        <div class="h-48 overflow-hidden">
+          <img src="https://picsum.photos/seed/paralives-modern-cat/500/380" alt="Modern Paralives house build category" class="w-full h-full object-cover" loading="lazy" width="500" height="380" />
+        </div>
+        <div class="p-5">
+          <span class="tag bg-blueprint-pale text-blueprint">MODERN</span>
+          <h3 class="font-display text-lg font-semibold text-ink mt-3 mb-1.5">Modern House Builds</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">Clean lines, curved walls, and open-plan layouts using Paralives' no-grid building tools.</p>
+        </div>
+      </a>
+
+      <a href="category-cozy.html" class="card-hover bg-cream rounded-2xl border border-sand overflow-hidden block">
+        <div class="h-48 overflow-hidden">
+          <img src="https://picsum.photos/seed/paralives-cozy-cat/500/380" alt="Cozy cottage Paralives house build category" class="w-full h-full object-cover" loading="lazy" width="500" height="380" />
+        </div>
+        <div class="p-5">
+          <span class="tag bg-sage-pale text-sage">COZY</span>
+          <h3 class="font-display text-lg font-semibold text-ink mt-3 mb-1.5">Cozy Cottage Builds</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">Warm, compact layouts with soft color palettes for a lived-in cottage feel.</p>
+        </div>
+      </a>
+
+      <a href="category-farm.html" class="card-hover bg-cream rounded-2xl border border-sand overflow-hidden block">
+        <div class="h-48 overflow-hidden">
+          <img src="https://picsum.photos/seed/paralives-farm-cat/500/380" alt="Farm style Paralives house build category" class="w-full h-full object-cover" loading="lazy" width="500" height="380" />
+        </div>
+        <div class="p-5">
+          <span class="tag bg-terracotta-pale text-terracotta-dark">FARM</span>
+          <h3 class="font-display text-lg font-semibold text-ink mt-3 mb-1.5">Farm House Builds</h3>
+          <p class="text-ink-soft text-sm leading-relaxed">Wraparound porches, barn-style rooflines, and rustic Paralives color schemes.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ════════════════ FEATURED BUILDS ════════════════ -->
+  <section class="bg-sand-light/60 border-y border-sand py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-8 gap-4 flex-wrap">
+        <div>
+          <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink">Featured Paralives build guides</h2>
+          <p class="text-ink-soft text-sm mt-1">Popular layouts our readers are building this season.</p>
+        </div>
+        <a href="category-modern.html" class="text-terracotta font-semibold text-sm hover:text-terracotta-dark transition-colors flex items-center gap-1">
+          View all builds
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>
+        </a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <a href="single-template-1.html" class="card-hover bg-cream rounded-2xl border border-sand overflow-hidden block">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://picsum.photos/seed/paralives-curve-villa/480/340" alt="Paralives curved wall modern villa build" class="w-full h-full object-cover" loading="lazy" width="480" height="340" />
+            <span class="absolute top-3 left-3 tag bg-cream/95 text-ink">Modern</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-base font-semibold text-ink mb-1.5">Curved Wall Modern Villa</h3>
+            <p class="text-ink-soft text-sm leading-relaxed mb-3">A single-story Paralives curved wall house with a sunken living room and floor-to-ceiling windows.</p>
+            <div class="flex items-center gap-3 text-xs text-ink-soft font-mono">
+              <span>★★☆ Intermediate</span>
+              <span>·</span>
+              <span>14 steps</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="single-template-1.html" class="card-hover bg-cream rounded-2xl border border-sand overflow-hidden block">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://picsum.photos/seed/paralives-cottage-loft/480/340" alt="Paralives cozy cottage loft build" class="w-full h-full object-cover" loading="lazy" width="480" height="340" />
+            <span class="absolute top-3 left-3 tag bg-cream/95 text-ink">Cozy</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-base font-semibold text-ink mb-1.5">Cottage Loft Starter Home</h3>
+            <p class="text-ink-soft text-sm leading-relaxed mb-3">A beginner-friendly Paralives layout guide with a loft bedroom and reading nook.</p>
+            <div class="flex items-center gap-3 text-xs text-ink-soft font-mono">
+              <span>★☆☆ Beginner</span>
+              <span>·</span>
+              <span>9 steps</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="single-template-1.html" class="card-hover bg-cream rounded-2xl border border-sand overflow-hidden block">
+          <div class="h-44 overflow-hidden relative">
+            <img src="https://picsum.photos/seed/paralives-farmhouse-porch/480/340" alt="Paralives farmhouse with wraparound porch build" class="w-full h-full object-cover" loading="lazy" width="480" height="340" />
+            <span class="absolute top-3 left-3 tag bg-cream/95 text-ink">Farm</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-base font-semibold text-ink mb-1.5">Wraparound Porch Farmhouse</h3>
+            <p class="text-ink-soft text-sm leading-relaxed mb-3">A two-story farm build with a full wraparound porch and barn-style gable roof.</p>
+            <div class="flex items-center gap-3 text-xs text-ink-soft font-mono">
+              <span>★★★ Advanced</span>
+              <span>·</span>
+              <span>22 steps</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ NO-GRID BUILDING FEATURE ════════════════ -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-2xl overflow-hidden shadow-md border border-sand order-2 lg:order-1">
+        <img src="https://picsum.photos/seed/paralives-nogrid-build/700/520" alt="Paralives no grid build technique demonstration" class="w-full h-full object-cover" loading="lazy" width="700" height="520" />
+      </div>
+      <div class="order-1 lg:order-2">
+        <span class="tag bg-blueprint-pale text-blueprint inline-block mb-4">TECHNIQUE GUIDE</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink mb-4">Master the Paralives no-grid build system</h2>
+        <p class="text-ink-soft leading-relaxed mb-4">
+          Paralives' freeform building tools let you place walls off the standard grid for angled rooms, organic curves, and layouts that feel hand-drawn rather than blocky. Every guide on this hub that uses curved or angled walls includes the exact no-grid building steps so you can recreate the same shapes in your own save file.
+        </p>
+        <p class="text-ink-soft leading-relaxed mb-6">
+          New to no-grid building? Start with a simpler Paralives build guide in the Cozy Builds category before moving on to the curved wall houses in Modern Builds.
+        </p>
+        <a href="category-modern.html" class="btn btn-outline">Explore curved wall builds</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ AD SLOT: Homepage mid content ════════════════ -->
+  <!-- ===== GOOGLE ADSENSE AD SLOT: home-mid-rectangle =====
+       Placement: between feature section and color guide preview.
+       Recommended size: responsive rectangle (336x280 / 300x250).
+       Reserve fixed min-height below to prevent CLS layout shift. -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="w-full flex items-center justify-center bg-sand-light border border-sand rounded-xl text-ink-soft text-xs font-mono" style="min-height:280px;">
+      Ad Placement — Home Mid Rectangle (336×280)
+    </div>
+  </div>
+  <!-- ===== END AD SLOT ===== -->
+
+  <!-- ════════════════ COLOR GUIDE PREVIEW ════════════════ -->
+  <section class="bg-ink py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="tag bg-terracotta text-cream inline-block mb-4">COLOR TOOL</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-semibold text-cream mb-4">Find the perfect Paralives color scheme</h2>
+          <p class="text-sand leading-relaxed mb-6">
+            Every build guide on this hub links back to a matching Paralives color scheme — wall paint, flooring, and trim codes laid out side by side so you can recreate the palette exactly, room by room.
+          </p>
+          <a href="color-guide.html" class="btn btn-primary">Open Color Guide</a>
+        </div>
+        <div class="grid grid-cols-4 gap-3">
+          <div class="aspect-square rounded-xl" style="background:#E8633C"></div>
+          <div class="aspect-square rounded-xl" style="background:#D4C5A8"></div>
+          <div class="aspect-square rounded-xl" style="background:#5B7B6B"></div>
+          <div class="aspect-square rounded-xl" style="background:#3D5A80"></div>
+          <div class="aspect-square rounded-xl" style="background:#EDE4D3"></div>
+          <div class="aspect-square rounded-xl" style="background:#C44E2C"></div>
+          <div class="aspect-square rounded-xl" style="background:#E3EBE6"></div>
+          <div class="aspect-square rounded-xl" style="background:#2B2620"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ LATEST FROM BLOG ════════════════ -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex items-end justify-between mb-8 gap-4 flex-wrap">
+      <div>
+        <h2 class="font-display text-2xl sm:text-3xl font-semibold text-ink">From the Build Blog</h2>
+        <p class="text-ink-soft text-sm mt-1">Tutorials, technique breakdowns, and Paralives building tips.</p>
+      </div>
+      <a href="blog-guide.html" class="text-terracotta font-semibold text-sm hover:text-terracotta-dark transition-colors flex items-center gap-1">
+        Read the blog
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <a href="blog-guide.html" class="block group">
+        <div class="rounded-xl overflow-hidden mb-3 border border-sand">
+          <img src="https://picsum.photos/seed/paralives-blog-1/420/280" alt="Paralives curved wall house tutorial blog post" class="w-full h-40 object-cover" loading="lazy" width="420" height="280" />
+        </div>
+        <h3 class="font-display text-base font-semibold text-ink group-hover:text-terracotta transition-colors">5 Curved Wall Layouts Every Paralives Builder Should Try</h3>
+        <p class="text-ink-soft text-xs mt-1.5 font-mono">7 MIN READ</p>
+      </a>
+      <a href="blog-guide.html" class="block group">
+        <div class="rounded-xl overflow-hidden mb-3 border border-sand">
+          <img src="https://picsum.photos/seed/paralives-blog-2/420/280" alt="Paralives no grid building beginner guide blog post" class="w-full h-40 object-cover" loading="lazy" width="420" height="280" />
+        </div>
+        <h3 class="font-display text-base font-semibold text-ink group-hover:text-terracotta transition-colors">No-Grid Building in Paralives: A Beginner's Layout Guide</h3>
+        <p class="text-ink-soft text-xs mt-1.5 font-mono">6 MIN READ</p>
+      </a>
+      <a href="blog-guide.html" class="block group">
+        <div class="rounded-xl overflow-hidden mb-3 border border-sand">
+          <img src="https://picsum.photos/seed/paralives-blog-3/420/280" alt="Paralives color scheme matching tutorial blog post" class="w-full h-40 object-cover" loading="lazy" width="420" height="280" />
+        </div>
+        <h3 class="font-display text-base font-semibold text-ink group-hover:text-terracotta transition-colors">How to Match a Paralives Color Scheme to Your Build Style</h3>
+        <p class="text-ink-soft text-xs mt-1.5 font-mono">5 MIN READ</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="bg-ink border-t border-sand">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-3">
+          <div class="w-8 h-8 rounded-lg bg-terracotta flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M3 11l9-7 9 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 10v9h14v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="font-display font-semibold text-cream text-base">Paralives Build Hub</span>
+        </div>
+        <p class="text-sand text-sm leading-relaxed max-w-sm">
+          Free step-by-step Paralives build guides, layout walkthroughs, and color scheme tools for the global Paralives community.
+        </p>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Navigate</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="index.html" class="hover:text-terracotta transition-colors">Home</a></li>
+          <li><a href="category-modern.html" class="hover:text-terracotta transition-colors">Modern Builds</a></li>
+          <li><a href="category-cozy.html" class="hover:text-terracotta transition-colors">Cozy Builds</a></li>
+          <li><a href="category-farm.html" class="hover:text-terracotta transition-colors">Farm Builds</a></li>
+          <li><a href="color-guide.html" class="hover:text-terracotta transition-colors">Color Guide</a></li>
+          <li><a href="blog-guide.html" class="hover:text-terracotta transition-colors">Build Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-display text-sm font-semibold text-cream mb-3">Legal</p>
+        <ul class="space-y-2 text-sm text-sand">
+          <li><a href="privacy-policy.html" class="hover:text-terracotta transition-colors">Privacy Policy</a></li>
+          <li><a href="terms.html" class="hover:text-terracotta transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-sand/70">
+      <p>&copy; <span id="year"></span> Paralives Build Hub. Fan site — not affiliated with Paralives Studio.</p>
+      <p>Built for the Paralives building community.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const navToggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  navToggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+    document.getElementById('icon-menu').classList.toggle('hidden', open);
+    document.getElementById('icon-close').classList.toggle('hidden', !open);
+  });
+</script>
+</body>
+</html>
