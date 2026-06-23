@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Wraparound porch farmhouse illustration</title>
+<desc id="desc">Hand-painted style illustration of a two-story farmhouse with a wraparound porch, sage green shutters, and a steep barn-style roof.</desc>
+<defs>
+  <linearGradient id="sky8" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F2EBDA"/>
+    <stop offset="55%" stop-color="#F7F1E4"/>
+    <stop offset="100%" stop-color="#FCF8EE"/>
+  </linearGradient>
+  <linearGradient id="ground8" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E2E0C9"/>
+    <stop offset="100%" stop-color="#D4D1AC"/>
+  </linearGradient>
+  <radialGradient id="sunGlow8" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FCE2B8" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#FCE2B8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky8)"/>
+<circle cx="240" cy="120" r="130" fill="url(#sunGlow8)"/>
+<circle cx="240" cy="120" r="40" fill="#FBD89C"/>
+
+<rect x="0" y="480" width="1200" height="200" fill="url(#ground8)"/>
+
+<polygon points="390,300 600,200 810,300" fill="#556B4A"/>
+<polygon points="390,300 600,200 810,300" fill="none" stroke="#2E3D28" stroke-width="2" opacity="0.4"/>
+
+<rect x="420" y="295" width="360" height="155" fill="#E8E2D8"/>
+<rect x="420" y="295" width="360" height="155" fill="none" stroke="#556B4A" stroke-width="2" opacity="0.4"/>
+
+<g>
+  <rect x="370" y="430" width="460" height="50" fill="#F0EAE0" opacity="0.92"/>
+  <rect x="370" y="420" width="460" height="14" fill="#556B4A"/>
+  <rect x="392" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="450" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="508" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="566" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="624" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="682" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="740" y="430" width="10" height="50" fill="#8FA68F"/>
+  <rect x="798" y="430" width="10" height="50" fill="#8FA68F"/>
+</g>
+
+<g>
+  <rect x="460" y="340" width="70" height="80" rx="2" fill="#8FA68F"/>
+  <rect x="468" y="347" width="54" height="66" rx="2" fill="#BFE0E8"/>
+  <line x1="495" y1="347" x2="495" y2="413" stroke="#8FA68F" stroke-width="3"/>
+</g>
+<g>
+  <rect x="670" y="340" width="70" height="80" rx="2" fill="#8FA68F"/>
+  <rect x="678" y="347" width="54" height="66" rx="2" fill="#BFE0E8"/>
+  <line x1="705" y1="347" x2="705" y2="413" stroke="#8FA68F" stroke-width="3"/>
+</g>
+
+<g>
+  <rect x="580" y="370" width="50" height="60" fill="#3D5A80"/>
+  <rect x="580" y="370" width="50" height="60" fill="none" stroke="#2B2620" stroke-width="2" opacity="0.4"/>
+  <circle cx="620" cy="402" r="3" fill="#D4C5A8"/>
+</g>
+
+<g opacity="0.9">
+  <rect x="380" y="475" width="450" height="10" fill="#2E3D28"/>
+</g>
+
+<g opacity="0.95">
+  <ellipse cx="330" cy="478" rx="46" ry="12" fill="#A8B89A"/>
+  <path d="M298 478 Q304 448 316 457 Q321 428 333 441 Q342 423 351 444 Q360 433 351 478 Z" fill="#556B4A"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="900" cy="482" rx="42" ry="11" fill="#A8B89A"/>
+  <path d="M872 482 Q878 454 888 462 Q892 437 902 449 Q911 434 919 455 Q927 445 919 482 Z" fill="#556B4A"/>
+</g>
+
+<path d="M0 575 Q300 558 600 568 T1200 562 L1200 680 L0 680 Z" fill="#D4D1AC"/>
+<path d="M0 608 Q300 593 600 602 T1200 596 L1200 680 L0 680 Z" fill="#C7C39B"/>
+
+<g opacity="0.8">
+  <ellipse cx="140" cy="615" rx="6" ry="9" fill="#6B8468"/>
+  <ellipse cx="1080" cy="618" rx="6" ry="9" fill="#6B8468"/>
+</g>
+</svg>

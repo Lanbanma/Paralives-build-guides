@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Silo tower farmhouse illustration</title>
+<desc id="desc">Hand-painted style illustration of a farmhouse with a curved silo-inspired tower attached to a wide wooden farmhouse base.</desc>
+<defs>
+  <linearGradient id="sky9" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F5E8D6"/>
+    <stop offset="55%" stop-color="#F9F0E2"/>
+    <stop offset="100%" stop-color="#FDF8EE"/>
+  </linearGradient>
+  <linearGradient id="ground9" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E3DBC0"/>
+    <stop offset="100%" stop-color="#D6CBA2"/>
+  </linearGradient>
+  <linearGradient id="silo" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#D4A574"/>
+    <stop offset="100%" stop-color="#B4855A"/>
+  </linearGradient>
+  <radialGradient id="sunGlow9" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FCE2B8" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#FCE2B8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky9)"/>
+<circle cx="950" cy="110" r="135" fill="url(#sunGlow9)"/>
+<circle cx="950" cy="110" r="44" fill="#FBD89C"/>
+
+<rect x="0" y="480" width="1200" height="200" fill="url(#ground9)"/>
+
+<g>
+  <path d="M780 480 L780 280 Q780 230 720 230 Q660 230 660 280 L660 480 Z" fill="url(#silo)"/>
+  <path d="M780 480 L780 280 Q780 230 720 230 Q660 230 660 280 L660 480 Z" fill="none" stroke="#8B5A3C" stroke-width="2" opacity="0.4"/>
+  <ellipse cx="720" cy="230" rx="60" ry="18" fill="#C49060"/>
+  <path d="M660 280 Q720 295 780 280" stroke="#8B5A3C" stroke-width="2" opacity="0.4" fill="none"/>
+  <path d="M660 340 Q720 355 780 340" stroke="#8B5A3C" stroke-width="2" opacity="0.4" fill="none"/>
+  <path d="M660 400 Q720 415 780 400" stroke="#8B5A3C" stroke-width="2" opacity="0.4" fill="none"/>
+  <rect x="700" y="350" width="40" height="55" rx="2" fill="#9CC9D6" opacity="0.9"/>
+</g>
+
+<g>
+  <rect x="370" y="370" width="320" height="110" fill="#F0E6D0"/>
+  <rect x="370" y="370" width="320" height="110" fill="none" stroke="#7A5C3E" stroke-width="2" opacity="0.4"/>
+  <polygon points="355,375 530,300 705,375" fill="#7A5235"/>
+  <polygon points="355,375 530,300 705,375" fill="none" stroke="#5C3A22" stroke-width="2" opacity="0.4"/>
+</g>
+
+<g>
+  <rect x="410" y="400" width="60" height="80" fill="#8C6B4F"/>
+  <line x1="410" y1="440" x2="470" y2="440" stroke="#5C3A22" stroke-width="3"/>
+  <line x1="440" y1="400" x2="440" y2="480" stroke="#5C3A22" stroke-width="3"/>
+</g>
+
+<g>
+  <rect x="555" y="408" width="20" height="22" rx="3" fill="#7A5C3E"/>
+  <rect x="535" y="430" width="220" height="50" fill="#5C3A22"/>
+</g>
+
+<g>
+  <rect x="580" y="395" width="55" height="55" rx="2" fill="#9CC9D6"/>
+  <rect x="580" y="395" width="55" height="55" rx="2" fill="none" stroke="#5C3A22" stroke-width="2.5"/>
+  <line x1="607" y1="395" x2="607" y2="450" stroke="#5C3A22" stroke-width="2"/>
+</g>
+
+<g opacity="0.9">
+  <rect x="370" y="475" width="320" height="10" fill="#2B1810"/>
+</g>
+
+<g opacity="0.95">
+  <ellipse cx="300" cy="478" rx="46" ry="12" fill="#A7B89C"/>
+  <path d="M268 478 Q274 448 286 457 Q291 428 303 441 Q312 423 321 444 Q330 433 321 478 Z" fill="#5B7B6B"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="900" cy="482" rx="40" ry="10" fill="#A7B89C"/>
+  <path d="M872 482 Q878 456 888 463 Q892 440 902 451 Q910 437 918 457 Q926 448 918 482 Z" fill="#5B7B6B"/>
+</g>
+
+<path d="M0 575 Q300 558 600 568 T1200 562 L1200 680 L0 680 Z" fill="#D6CBA2"/>
+<path d="M0 608 Q300 593 600 602 T1200 596 L1200 680 L0 680 Z" fill="#C9BD93"/>
+
+<g opacity="0.8">
+  <ellipse cx="140" cy="615" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="1080" cy="618" rx="6" ry="9" fill="#7A9276"/>
+</g>
+</svg>

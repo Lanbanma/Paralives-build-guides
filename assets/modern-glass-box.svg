@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Glass box minimalist house illustration</title>
+<desc id="desc">Hand-painted style illustration of a flat-roofed modern house with large glass walls and a cool grey palette with a blueprint blue accent.</desc>
+<defs>
+  <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E9EEF2"/>
+    <stop offset="55%" stop-color="#F1F4F0"/>
+    <stop offset="100%" stop-color="#F8F6EF"/>
+  </linearGradient>
+  <linearGradient id="ground2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#DCD9CF"/>
+    <stop offset="100%" stop-color="#D0CCBF"/>
+  </linearGradient>
+  <linearGradient id="wall2" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#E8E4DF"/>
+    <stop offset="100%" stop-color="#D7D2C8"/>
+  </linearGradient>
+  <linearGradient id="glass2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#AEC4D6"/>
+    <stop offset="100%" stop-color="#8CA9BE"/>
+  </linearGradient>
+  <radialGradient id="sunGlow2" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#E7EFF6" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#E7EFF6" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky2)"/>
+<circle cx="200" cy="110" r="130" fill="url(#sunGlow2)"/>
+<circle cx="200" cy="110" r="40" fill="#F4EDE1"/>
+
+<rect x="0" y="480" width="1200" height="200" fill="url(#ground2)"/>
+<path d="M0 480 Q300 462 600 476 T1200 470 L1200 480 Z" fill="#E3DFD3"/>
+
+<g>
+  <rect x="300" y="300" width="600" height="180" fill="url(#wall2)"/>
+  <rect x="300" y="290" width="600" height="14" fill="#BFBAB4"/>
+  <rect x="270" y="276" width="660" height="14" fill="#1A1A1F"/>
+</g>
+
+<g>
+  <rect x="330" y="330" width="190" height="150" fill="url(#glass2)"/>
+  <rect x="330" y="330" width="190" height="150" fill="none" stroke="#1A1A1F" stroke-width="4" opacity="0.55"/>
+  <line x1="425" y1="330" x2="425" y2="480" stroke="#1A1A1F" stroke-width="3" opacity="0.4"/>
+  <path d="M330 330 L 430 420" stroke="#FFFFFF" stroke-width="16" opacity="0.18" stroke-linecap="round"/>
+</g>
+
+<g>
+  <rect x="560" y="330" width="270" height="150" fill="url(#glass2)"/>
+  <rect x="560" y="330" width="270" height="150" fill="none" stroke="#1A1A1F" stroke-width="4" opacity="0.55"/>
+  <line x1="650" y1="330" x2="650" y2="480" stroke="#1A1A1F" stroke-width="3" opacity="0.35"/>
+  <line x1="740" y1="330" x2="740" y2="480" stroke="#1A1A1F" stroke-width="3" opacity="0.35"/>
+  <path d="M560 330 L 660 420" stroke="#FFFFFF" stroke-width="18" opacity="0.16" stroke-linecap="round"/>
+</g>
+
+<g>
+  <rect x="846" y="350" width="44" height="130" fill="#8C9BAF"/>
+  <rect x="846" y="350" width="44" height="130" fill="none" stroke="#1A1A1F" stroke-width="3" opacity="0.4"/>
+  <circle cx="880" cy="412" r="3" fill="#F4EDE1"/>
+</g>
+
+<rect x="300" y="475" width="600" height="10" fill="#BFBAB4" opacity="0.7"/>
+
+<g opacity="0.95">
+  <ellipse cx="250" cy="478" rx="48" ry="12" fill="#A7B5A3"/>
+  <path d="M215 478 Q222 446 234 454 Q240 428 252 440 Q260 420 270 442 Q280 430 270 478 Z" fill="#6E8B6C"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="950" cy="482" rx="40" ry="11" fill="#A7B5A3"/>
+  <path d="M920 482 Q926 454 936 461 Q940 438 950 449 Q958 435 966 455 Q973 446 966 482 Z" fill="#6E8B6C"/>
+</g>
+
+<g opacity="0.85">
+  <rect x="690" y="480" width="3" height="3" fill="#8C9BAF"/>
+</g>
+
+<path d="M0 575 Q300 558 600 568 T1200 562 L1200 680 L0 680 Z" fill="#D0CCBF"/>
+<path d="M0 608 Q300 595 600 602 T1200 598 L1200 680 L0 680 Z" fill="#C3BEAE"/>
+
+<g opacity="0.8">
+  <circle cx="120" cy="615" r="6" fill="#94A78F"/>
+  <circle cx="140" cy="622" r="5" fill="#84987F"/>
+  <circle cx="1090" cy="618" r="6" fill="#94A78F"/>
+  <circle cx="1110" cy="610" r="5" fill="#84987F"/>
+</g>
+</svg>

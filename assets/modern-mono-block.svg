@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Monochrome block house illustration</title>
+<desc id="desc">Hand-painted style illustration of a rectangular modern house with white walls, a terracotta front door, and warm wood flooring accent visible through a window.</desc>
+<defs>
+  <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F9EFE0"/>
+    <stop offset="55%" stop-color="#FCF4E8"/>
+    <stop offset="100%" stop-color="#FEFAF1"/>
+  </linearGradient>
+  <linearGradient id="ground3" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E5DECB"/>
+    <stop offset="100%" stop-color="#D9D0B9"/>
+  </linearGradient>
+  <radialGradient id="sunGlow3" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FCE2B8" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#FCE2B8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky3)"/>
+<circle cx="950" cy="130" r="130" fill="url(#sunGlow3)"/>
+<circle cx="950" cy="130" r="42" fill="#FBD89C"/>
+
+<rect x="0" y="478" width="1200" height="202" fill="url(#ground3)"/>
+<path d="M0 478 Q300 460 600 474 T1200 468 L1200 478 Z" fill="#EFE7D2"/>
+
+<rect x="320" y="300" width="560" height="180" fill="#FFFDF8"/>
+<rect x="320" y="300" width="560" height="180" fill="none" stroke="#2B2620" stroke-width="3" opacity="0.5"/>
+<rect x="300" y="284" width="600" height="18" fill="#2B2620"/>
+
+<rect x="360" y="340" width="120" height="140" fill="#9CC9D6" opacity="0.9"/>
+<rect x="360" y="340" width="120" height="140" fill="none" stroke="#2B2620" stroke-width="3" opacity="0.5"/>
+<line x1="420" y1="340" x2="420" y2="480" stroke="#2B2620" stroke-width="2" opacity="0.35"/>
+<path d="M360 340 L 420 400" stroke="#FFFFFF" stroke-width="12" opacity="0.18" stroke-linecap="round"/>
+
+<rect x="700" y="350" width="140" height="130" fill="#9CC9D6" opacity="0.9"/>
+<rect x="700" y="350" width="140" height="130" fill="none" stroke="#2B2620" stroke-width="3" opacity="0.5"/>
+<line x1="770" y1="350" x2="770" y2="480" stroke="#2B2620" stroke-width="2" opacity="0.35"/>
+<rect x="710" y="460" width="120" height="14" fill="#8C6B4F" opacity="0.6"/>
+
+<g>
+  <rect x="540" y="380" width="60" height="100" fill="#E8633C"/>
+  <rect x="540" y="380" width="60" height="100" fill="none" stroke="#A8401F" stroke-width="2" opacity="0.4"/>
+  <circle cx="586" cy="430" r="3.5" fill="#FBE4DA"/>
+</g>
+
+<rect x="320" y="475" width="560" height="8" fill="#D4C5A8" opacity="0.7"/>
+
+<g opacity="0.95">
+  <ellipse cx="240" cy="475" rx="50" ry="13" fill="#8FA68F"/>
+  <path d="M204 475 Q212 440 226 450 Q232 418 246 432 Q256 412 266 436 Q276 424 266 475 Z" fill="#5B7B6B"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="960" cy="480" rx="38" ry="10" fill="#8FA68F"/>
+  <path d="M932 480 Q938 452 948 459 Q952 436 962 447 Q970 433 978 453 Q986 444 978 480 Z" fill="#5B7B6B"/>
+</g>
+
+<path d="M0 572 Q300 555 600 565 T1200 558 L1200 680 L0 680 Z" fill="#D9D0B9"/>
+<path d="M0 605 Q300 590 600 598 T1200 592 L1200 680 L0 680 Z" fill="#CCC1A4"/>
+
+<g opacity="0.8">
+  <ellipse cx="150" cy="612" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="1080" cy="616" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="60" cy="630" rx="7" ry="10" fill="#6B8468"/>
+</g>
+</svg>

@@ -1,0 +1,92 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Red barn-style farmhouse illustration</title>
+<desc id="desc">Hand-painted style illustration of a farmhouse with a red gambrel barn roof, cream walls, and a dark foundation trim.</desc>
+<defs>
+  <linearGradient id="sky7" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F6E9D4"/>
+    <stop offset="55%" stop-color="#FAF1E2"/>
+    <stop offset="100%" stop-color="#FDF8EE"/>
+  </linearGradient>
+  <linearGradient id="ground7" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E2DCBF"/>
+    <stop offset="100%" stop-color="#D5CCA2"/>
+  </linearGradient>
+  <linearGradient id="barnRed" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#D14A39"/>
+    <stop offset="100%" stop-color="#A8392B"/>
+  </linearGradient>
+  <radialGradient id="sunGlow7" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FCE2B8" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#FCE2B8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky7)"/>
+<circle cx="970" cy="115" r="135" fill="url(#sunGlow7)"/>
+<circle cx="970" cy="115" r="44" fill="#FBD89C"/>
+<ellipse cx="200" cy="150" rx="85" ry="24" fill="#FFFFFF" opacity="0.6"/>
+<ellipse cx="280" cy="140" rx="55" ry="18" fill="#FFFFFF" opacity="0.5"/>
+
+<rect x="0" y="480" width="1200" height="200" fill="url(#ground7)"/>
+<path d="M0 480 Q300 462 600 476 T1200 470 L1200 480 Z" fill="#EBE3C5"/>
+
+<g>
+  <path d="M380 480 L380 360 Q380 330 420 320 L420 280 Q450 250 500 250 L700 250 Q750 250 780 280 L780 320 Q820 330 820 360 L820 480 Z" fill="url(#barnRed)"/>
+  <path d="M380 480 L380 360 Q380 330 420 320 L420 280 Q450 250 500 250 L700 250 Q750 250 780 280 L780 320 Q820 330 820 360 L820 480 Z" fill="none" stroke="#7A2A1F" stroke-width="2" opacity="0.4"/>
+  <line x1="420" y1="320" x2="780" y2="320" stroke="#8B342A" stroke-width="3" opacity="0.5"/>
+</g>
+
+<rect x="450" y="370" width="300" height="110" fill="#F2E8D8"/>
+<rect x="450" y="370" width="300" height="110" fill="none" stroke="#7A5C3E" stroke-width="2" opacity="0.35"/>
+
+<g>
+  <rect x="560" y="390" width="80" height="90" fill="#5C3A22"/>
+  <path d="M560 390 L600 360 L640 390 Z" fill="#5C3A22"/>
+  <line x1="560" y1="430" x2="640" y2="430" stroke="#3A2415" stroke-width="3"/>
+  <line x1="600" y1="390" x2="600" y2="480" stroke="#3A2415" stroke-width="3"/>
+  <circle cx="595" cy="438" r="3" fill="#D4A574"/>
+</g>
+
+<g>
+  <rect x="480" y="395" width="55" height="60" rx="2" fill="#9CC9D6"/>
+  <rect x="480" y="395" width="55" height="60" rx="2" fill="none" stroke="#5C3A22" stroke-width="2.5"/>
+  <line x1="507" y1="395" x2="507" y2="455" stroke="#5C3A22" stroke-width="2"/>
+  <line x1="480" y1="425" x2="535" y2="425" stroke="#5C3A22" stroke-width="2"/>
+</g>
+<g>
+  <rect x="665" y="395" width="55" height="60" rx="2" fill="#9CC9D6"/>
+  <rect x="665" y="395" width="55" height="60" rx="2" fill="none" stroke="#5C3A22" stroke-width="2.5"/>
+  <line x1="692" y1="395" x2="692" y2="455" stroke="#5C3A22" stroke-width="2"/>
+  <line x1="665" y1="425" x2="720" y2="425" stroke="#5C3A22" stroke-width="2"/>
+</g>
+
+<polygon points="500,260 600,290 700,260" fill="#F0D9A8" opacity="0.85"/>
+<circle cx="600" cy="275" r="4" fill="#7A5C3E"/>
+
+<g opacity="0.9">
+  <rect x="380" y="475" width="440" height="10" fill="#2B1810"/>
+</g>
+
+<g opacity="0.95">
+  <ellipse cx="320" cy="478" rx="48" ry="12" fill="#A7B89C"/>
+  <path d="M286 478 Q293 446 305 455 Q310 426 323 440 Q333 420 343 442 Q353 430 343 478 Z" fill="#6B8468"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="900" cy="482" rx="42" ry="11" fill="#A7B89C"/>
+  <path d="M870 482 Q877 452 888 461 Q893 436 904 449 Q913 433 923 455 Q932 444 923 482 Z" fill="#6B8468"/>
+</g>
+
+<g opacity="0.85">
+  <rect x="180" y="450" width="6" height="40" fill="#7A5C3E"/>
+  <rect x="160" y="445" width="46" height="8" fill="#7A5C3E"/>
+  <rect x="160" y="460" width="46" height="6" fill="#8C6B4F"/>
+</g>
+
+<path d="M0 575 Q300 558 600 568 T1200 562 L1200 680 L0 680 Z" fill="#D5CCA2"/>
+<path d="M0 608 Q300 593 600 602 T1200 596 L1200 680 L0 680 Z" fill="#C8BE91"/>
+
+<g opacity="0.8">
+  <ellipse cx="140" cy="615" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="1080" cy="618" rx="6" ry="9" fill="#7A9276"/>
+</g>
+</svg>

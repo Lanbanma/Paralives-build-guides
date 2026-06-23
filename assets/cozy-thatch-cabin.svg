@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Thatched roof cottage illustration</title>
+<desc id="desc">Hand-painted style illustration of a small cozy cottage with a steep thatched roof, warm linen walls, sage green shutters, and a garden path.</desc>
+<defs>
+  <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F4E9D8"/>
+    <stop offset="55%" stop-color="#F9F0E2"/>
+    <stop offset="100%" stop-color="#FDF7EE"/>
+  </linearGradient>
+  <linearGradient id="ground4" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E6DCC5"/>
+    <stop offset="100%" stop-color="#DACFAF"/>
+  </linearGradient>
+  <linearGradient id="thatch" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#D4B374"/>
+    <stop offset="100%" stop-color="#B89254"/>
+  </linearGradient>
+  <radialGradient id="sunGlow4" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FCE2B8" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#FCE2B8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky4)"/>
+<circle cx="970" cy="120" r="130" fill="url(#sunGlow4)"/>
+<circle cx="970" cy="120" r="42" fill="#FBD89C"/>
+<ellipse cx="200" cy="150" rx="80" ry="22" fill="#FFFFFF" opacity="0.6"/>
+<ellipse cx="270" cy="140" rx="55" ry="18" fill="#FFFFFF" opacity="0.5"/>
+
+<rect x="0" y="480" width="1200" height="200" fill="url(#ground4)"/>
+
+<g>
+  <rect x="420" y="350" width="360" height="130" fill="#F5EFE7"/>
+  <rect x="420" y="350" width="360" height="130" fill="none" stroke="#7A5C3E" stroke-width="2.5" opacity="0.4"/>
+  <polygon points="400,355 600,225 800,355" fill="url(#thatch)"/>
+  <polygon points="400,355 600,225 800,355" fill="none" stroke="#8C6B3E" stroke-width="2" opacity="0.5"/>
+  <path d="M420 350 L600 240 L780 350" stroke="#C9A461" stroke-width="3" opacity="0.5" fill="none"/>
+  <path d="M440 350 L600 255 L760 350" stroke="#C9A461" stroke-width="2" opacity="0.4" fill="none"/>
+</g>
+
+<g>
+  <rect x="460" y="390" width="80" height="90" rx="2" fill="#5B7B6B"/>
+  <rect x="468" y="398" width="64" height="74" rx="2" fill="#C9A97A"/>
+  <line x1="468" y1="435" x2="532" y2="435" stroke="#5B7B6B" stroke-width="3"/>
+  <line x1="500" y1="398" x2="500" y2="472" stroke="#5B7B6B" stroke-width="3"/>
+</g>
+
+<g>
+  <rect x="650" y="375" width="90" height="70" rx="2" fill="#5B7B6B"/>
+  <rect x="658" y="382" width="74" height="56" rx="2" fill="#BFE0E8"/>
+  <line x1="695" y1="382" x2="695" y2="438" stroke="#5B7B6B" stroke-width="3"/>
+  <line x1="658" y1="410" x2="732" y2="410" stroke="#5B7B6B" stroke-width="3"/>
+</g>
+
+<g>
+  <rect x="560" y="410" width="20" height="20" rx="4" fill="#7A5C3E"/>
+  <rect x="540" y="430" width="240" height="50" fill="#8C6B4F"/>
+</g>
+
+<g opacity="0.95">
+  <ellipse cx="400" cy="478" rx="42" ry="11" fill="#9FB89A"/>
+  <path d="M370 478 Q377 450 388 459 Q393 432 406 446 Q415 428 424 449 Q433 438 424 478 Z" fill="#5B7B6B"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="830" cy="482" rx="38" ry="10" fill="#9FB89A"/>
+  <path d="M802 482 Q808 456 818 463 Q822 440 832 451 Q840 437 848 457 Q856 448 848 482 Z" fill="#5B7B6B"/>
+</g>
+
+<g opacity="0.9">
+  <ellipse cx="270" cy="480" rx="55" ry="14" fill="#C9A461" opacity="0.4"/>
+  <ellipse cx="240" cy="475" rx="9" ry="13" fill="#E8633C"/>
+  <ellipse cx="260" cy="478" rx="9" ry="13" fill="#D9A441"/>
+  <ellipse cx="280" cy="475" rx="9" ry="13" fill="#5B7B6B"/>
+  <ellipse cx="300" cy="478" rx="9" ry="13" fill="#E8633C"/>
+</g>
+
+<path d="M0 575 Q300 558 600 568 T1200 562 L1200 680 L0 680 Z" fill="#DACFAF"/>
+<path d="M0 608 Q300 593 600 602 T1200 596 L1200 680 L0 680 Z" fill="#CDC0A0"/>
+
+<g opacity="0.8">
+  <ellipse cx="130" cy="615" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="1080" cy="618" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="1100" cy="610" rx="6" ry="9" fill="#6B8468"/>
+</g>
+</svg>

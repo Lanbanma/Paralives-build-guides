@@ -1,0 +1,82 @@
+<svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Stone hearth family cottage illustration</title>
+<desc id="desc">Hand-painted style illustration of a two-bedroom cottage with a stone chimney, amber wood trim, and a pitched roof in a warm cozy palette.</desc>
+<defs>
+  <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#F7EBDA"/>
+    <stop offset="55%" stop-color="#FAF1E4"/>
+    <stop offset="100%" stop-color="#FDF8EF"/>
+  </linearGradient>
+  <linearGradient id="ground5" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E6DCC2"/>
+    <stop offset="100%" stop-color="#DACEAB"/>
+  </linearGradient>
+  <linearGradient id="roof5" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#8B5A3C"/>
+    <stop offset="100%" stop-color="#6B3A2A"/>
+  </linearGradient>
+  <radialGradient id="sunGlow5" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#FCE2B8" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#FCE2B8" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="1200" height="680" fill="url(#sky5)"/>
+<circle cx="220" cy="120" r="130" fill="url(#sunGlow5)"/>
+<circle cx="220" cy="120" r="42" fill="#FBD89C"/>
+
+<rect x="0" y="480" width="1200" height="200" fill="url(#ground5)"/>
+
+<polygon points="380,355 600,235 820,355" fill="url(#roof5)"/>
+<polygon points="380,355 600,235 820,355" fill="none" stroke="#4A2A1C" stroke-width="2" opacity="0.4"/>
+
+<rect x="400" y="350" width="400" height="130" fill="#F9F2EA"/>
+<rect x="400" y="350" width="400" height="130" fill="none" stroke="#7A5C3E" stroke-width="2.5" opacity="0.4"/>
+
+<g>
+  <rect x="850" y="280" width="50" height="180" fill="#C4B8A4"/>
+  <rect x="850" y="280" width="50" height="180" fill="none" stroke="#9C9080" stroke-width="2" opacity="0.5"/>
+  <rect x="850" y="280" width="50" height="14" fill="#A89C88"/>
+  <circle cx="862" cy="320" r="5" fill="#B0A48F"/>
+  <circle cx="884" cy="345" r="6" fill="#A89C88"/>
+  <circle cx="868" cy="375" r="5" fill="#B0A48F"/>
+  <circle cx="888" cy="405" r="6" fill="#A89C88"/>
+  <circle cx="864" cy="430" r="5" fill="#B0A48F"/>
+</g>
+
+<g>
+  <rect x="440" y="390" width="90" height="90" rx="2" fill="#C4864A"/>
+  <rect x="450" y="398" width="70" height="74" rx="2" fill="#E2C4A8"/>
+  <line x1="485" y1="398" x2="485" y2="472" stroke="#C4864A" stroke-width="3"/>
+  <line x1="450" y1="435" x2="520" y2="435" stroke="#C4864A" stroke-width="3"/>
+</g>
+
+<g>
+  <rect x="650" y="375" width="100" height="70" rx="2" fill="#C4864A"/>
+  <rect x="658" y="382" width="84" height="56" rx="2" fill="#9CC9D6"/>
+  <line x1="700" y1="382" x2="700" y2="438" stroke="#C4864A" stroke-width="3"/>
+</g>
+
+<g>
+  <rect x="565" y="408" width="20" height="22" rx="4" fill="#7A5C3E"/>
+  <rect x="545" y="430" width="250" height="50" fill="#6B3A2A"/>
+  <rect x="545" y="430" width="250" height="10" fill="#8B5A3C" opacity="0.6"/>
+</g>
+
+<g opacity="0.95">
+  <ellipse cx="380" cy="478" rx="40" ry="11" fill="#A7B89C"/>
+  <path d="M352 478 Q358 452 368 460 Q372 436 384 448 Q392 432 400 452 Q408 442 400 478 Z" fill="#6B8468"/>
+</g>
+<g opacity="0.9">
+  <ellipse cx="840" cy="482" rx="42" ry="11" fill="#A7B89C"/>
+  <path d="M810 482 Q817 454 828 462 Q832 438 844 450 Q853 435 862 456 Q871 446 862 482 Z" fill="#6B8468"/>
+</g>
+
+<path d="M0 575 Q300 558 600 568 T1200 562 L1200 680 L0 680 Z" fill="#DACEAB"/>
+<path d="M0 608 Q300 593 600 602 T1200 596 L1200 680 L0 680 Z" fill="#CDC09A"/>
+
+<g opacity="0.8">
+  <ellipse cx="140" cy="615" rx="6" ry="9" fill="#7A9276"/>
+  <ellipse cx="1080" cy="618" rx="6" ry="9" fill="#7A9276"/>
+</g>
+</svg>
